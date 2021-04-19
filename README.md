@@ -1,2 +1,6 @@
 # ASP.NET-Core-Membership
-Membership Code Template
+ASP.NET Core web page
+
+## Prerequisites
++ .NET Core 2.1 SDK
++ Visual Studio 2017
