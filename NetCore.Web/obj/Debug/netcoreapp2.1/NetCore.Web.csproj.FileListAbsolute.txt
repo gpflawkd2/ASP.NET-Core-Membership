@@ -1,0 +1,72 @@
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.deps.json
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.runtimeconfig.json
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.runtimeconfig.dev.json
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.dll
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csprojAssemblyReference.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csproj.CoreCompileInputs.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorAssemblyInfo.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorAssemblyInfo.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.AssemblyInfoInputs.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.AssemblyInfo.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.TagHelpers.input.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.TagHelpers.output.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorCoreGenerate.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorTargetAssemblyInfo.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorTargetAssemblyInfo.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.pdb
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.Views.dll
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.Views.pdb
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.Views.pdb
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.dll
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.pdb
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csproj.CopyComplete
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Index.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Login.g.cshtml.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Data.dll
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Services.dll
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Services.pdb
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Data.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.deps.json
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.runtimeconfig.json
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.runtimeconfig.dev.json
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.Views.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Web.Views.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Data.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Services.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Services.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Data.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csprojAssemblyReference.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csproj.CoreCompileInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorAssemblyInfo.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorAssemblyInfo.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.AssemblyInfoInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.AssemblyInfo.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.TagHelpers.input.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.TagHelpers.output.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorCoreGenerate.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Index.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Login.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorTargetAssemblyInfo.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorTargetAssemblyInfo.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.Views.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csproj.CopyComplete
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.pdb

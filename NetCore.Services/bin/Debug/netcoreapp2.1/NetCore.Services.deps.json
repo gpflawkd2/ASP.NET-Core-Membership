@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "NetCore.Services/1.0.0": {
+        "dependencies": {
+          "NetCore.Data": "1.0.0"
+        },
+        "runtime": {
+          "NetCore.Services.dll": {}
+        }
+      },
+      "NetCore.Data/1.0.0": {
+        "runtime": {
+          "NetCore.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NetCore.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetCore.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

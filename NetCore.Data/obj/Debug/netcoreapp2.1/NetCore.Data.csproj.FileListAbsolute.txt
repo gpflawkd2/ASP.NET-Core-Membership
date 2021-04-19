@@ -1,0 +1,18 @@
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\bin\Debug\netcoreapp2.1\NetCore.Data.deps.json
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\bin\Debug\netcoreapp2.1\NetCore.Data.dll
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\bin\Debug\netcoreapp2.1\NetCore.Data.pdb
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.csprojAssemblyReference.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.csproj.CoreCompileInputs.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.AssemblyInfoInputs.cache
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.AssemblyInfo.cs
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.dll
+D:\ETC\PJ\ASP.NET Core\NetCore\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\bin\Debug\netcoreapp2.1\NetCore.Data.deps.json
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\bin\Debug\netcoreapp2.1\NetCore.Data.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\bin\Debug\netcoreapp2.1\NetCore.Data.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.csprojAssemblyReference.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.csproj.CoreCompileInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.AssemblyInfoInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.AssemblyInfo.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Data\obj\Debug\netcoreapp2.1\NetCore.Data.pdb
