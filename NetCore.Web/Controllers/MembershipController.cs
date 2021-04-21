@@ -1,13 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using NetCore.Data.ViewModels;
 using NetCore.Services.Interfaces;
-using NetCore.Services.Svcs;
 
 namespace NetCore.Web.Controllers
 {
     public class MembershipController : Controller
     {
-
         // 의존성 주입 - 생성자
         private IUser _user;
 
@@ -20,7 +18,6 @@ namespace NetCore.Web.Controllers
         {
             return View();
         }
-
 
         [HttpGet]
         public IActionResult Login()
@@ -36,7 +33,6 @@ namespace NetCore.Web.Controllers
         // Data => Web
         public IActionResult Login(LoginInfoViewModel login)
         {
-
             string message = string.Empty;
 
             if (ModelState.IsValid)

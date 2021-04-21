@@ -1,0 +1,14 @@
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\bin\Debug\netcoreapp2.1\NetCore.Migrations.deps.json
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\bin\Debug\netcoreapp2.1\NetCore.Migrations.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\bin\Debug\netcoreapp2.1\NetCore.Migrations.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\bin\Debug\netcoreapp2.1\NetCore.Data.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\bin\Debug\netcoreapp2.1\NetCore.Services.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\bin\Debug\netcoreapp2.1\NetCore.Services.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\bin\Debug\netcoreapp2.1\NetCore.Data.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\obj\Debug\netcoreapp2.1\NetCore.Migrations.csprojAssemblyReference.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\obj\Debug\netcoreapp2.1\NetCore.Migrations.csproj.CoreCompileInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\obj\Debug\netcoreapp2.1\NetCore.Migrations.AssemblyInfoInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\obj\Debug\netcoreapp2.1\NetCore.Migrations.AssemblyInfo.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\obj\Debug\netcoreapp2.1\NetCore.Migrations.csproj.CopyComplete
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\obj\Debug\netcoreapp2.1\NetCore.Migrations.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Migrations\obj\Debug\netcoreapp2.1\NetCore.Migrations.pdb

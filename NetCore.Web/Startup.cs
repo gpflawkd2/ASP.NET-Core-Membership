@@ -2,8 +2,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
 using NetCore.Services.Svcs;
 
@@ -24,6 +26,12 @@ namespace NetCore.Web
             // 의존성 주입을 사용하기 위해서 서비스로 등록
             // IUser 인터페이스에 UserService 클래스 인스턴스 주입
             services.AddScoped<IUser, UserService>();
+
+            // DB 접속정보, Migration 프로젝트 지정
+            services.AddDbContext<CodeFirstDbContext>(options =>
+                options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DefaultConnection"),
+                sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName:"NetCore.Migrations"))
+            );
 
             services.Configure<CookiePolicyOptions>(options =>
             {
