@@ -28,9 +28,14 @@ namespace NetCore.Web
             services.AddScoped<IUser, UserService>();
 
             // DB 접속정보, Migration 프로젝트 지정
-            services.AddDbContext<CodeFirstDbContext>(options =>
-                options.UseSqlServer(connectionString: Configuration.GetConnectionString(name: "DefaultConnection"),
-                sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName:"NetCore.Migrations"))
+            //services.AddDbContext<CodeFirstDbContext>(options =>
+            //    options.UseSqlServer(connectionString: Configuration.GetConnectionString(name:"DefaultConnection"),
+            //    sqlServerOptionsAction: mig => mig.MigrationsAssembly(assemblyName:"NetCore.Migrations"))
+            //);
+
+            //DB 접속정보
+            services.AddDbContext<DBFirstDbContext>(options =>
+                options.UseSqlServer(connectionString:Configuration.GetConnectionString(name:"DBFirstDBConnection"))
             );
 
             services.Configure<CookiePolicyOptions>(options =>

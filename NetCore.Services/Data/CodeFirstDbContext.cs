@@ -20,6 +20,8 @@ namespace NetCore.Services.Data
 
         // DB 테이블
         public DbSet<User> Users { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<UserRolesByUser> UserRolesByUsers { get; set; }
 
 
         // 메서드 상속, 부모클래스에서 OnModelCreating 메서드가 virtual 키워드로 지정이 되어 있어야만 자식클래스에서 override 키워드를 통해 상속받을 수 있음
@@ -29,6 +31,8 @@ namespace NetCore.Services.Data
 
             // DB 테이블이름 변경
             modelBuilder.Entity<User>().ToTable("User");
+            modelBuilder.Entity<UserRole>().ToTable("UserRole");
+            modelBuilder.Entity<UserRolesByUser>().ToTable("UserRolesByUser");
 
             // 복합키 지정
             modelBuilder.Entity<UserRolesByUser>().HasKey(c => new { c.UserId, c.RoleId });

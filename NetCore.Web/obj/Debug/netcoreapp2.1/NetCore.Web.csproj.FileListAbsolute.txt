@@ -57,7 +57,6 @@ D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.We
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.TagHelpers.output.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorCoreGenerate.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
-D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Index.g.cshtml.cs
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Login.g.cshtml.cs
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
