@@ -41,23 +41,23 @@ namespace NetCore.Services.Svcs
             User user;
 
             // Lanmda
-            user = _context.Users.Where(u => u.UserId.Equals(userId) && u.Password.Equals(password)).FirstOrDefault();
+            //user = _context.Users.Where(u => u.UserId.Equals(userId) && u.Password.Equals(password)).FirstOrDefault();
 
             // ** FromSql **
             // 컬럼 모두를 조회해야 Error가 발생되지 않음
 
             // TABLE -> Where 조건은 Lanmda식으로 사용해야함
-            user = _context.Users.FromSql("SELECT UserID, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinUtcDate FROM dbo.[User]")
-                                 .Where(u => u.UserId.Equals(userId) && u.Password.Equals(password))
-                                 .FirstOrDefault();
+            //user = _context.Users.FromSql("SELECT UserID, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinUtcDate FROM dbo.[User]")
+            //                     .Where(u => u.UserId.Equals(userId) && u.Password.Equals(password))
+            //                     .FirstOrDefault();
 
             // VIEW -> Where 조건은 Lanmda식으로 사용해야함
-            user = _context.Users.FromSql("SELECT UserID, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinUtcDate FROM dbo.uvwUser")
-                                 .Where(u => u.UserId.Equals(userId) && u.Password.Equals(password))
-                                 .FirstOrDefault();
+            //user = _context.Users.FromSql("SELECT UserID, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinUtcDate FROM dbo.uvwUser")
+            //                     .Where(u => u.UserId.Equals(userId) && u.Password.Equals(password))
+            //                     .FirstOrDefault();
 
             // FUNCTION
-            user = _context.Users.FromSql($"SELECT UserID, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinUtcDate FROM dbo.ufnUser({userId},{password})").FirstOrDefault();
+            //user = _context.Users.FromSql($"SELECT UserID, UserName, UserEmail, Password, IsMembershipWithdrawn, JoinUtcDate FROM dbo.ufnUser({userId},{password})").FirstOrDefault();
 
 
             // STORED PROCEDURE
@@ -68,6 +68,24 @@ namespace NetCore.Services.Svcs
             // cf.숫자인 경우 (-> .ToSting())
             //int count = 1;
             //user = _context.Users.FromSql("dbo.uspCheckLoginByUserId @p0, @p1, @p2", new[] { userId, password, count.ToString() }).FirstOrDefault();
+
+            if (user == null)
+            {
+                // ** ExecuteSqlCommand **
+                // int 값을 return
+                // Database의 Insert, Update, Delete 작업 후 SELECT 구문을 추가해도 그 값을 return 할 수 없음
+
+
+                // 접속실패횟수에 대한 증가
+                int rowAffected;
+
+                // SQL문 직접 작성
+                //rowAffected = _context.Database.ExecuteSqlCommand($"UPDATE dbo.[User] SET AccessFailedCount += 1 WHERE UserId={userId}");
+
+                // STORED PROCEDURE
+                rowAffected = _context.Database.ExecuteSqlCommand("dbo.uspFaildLoginByUserId @p0", parameters:new[] { userId });
+
+            }
 
             return user;
         }
