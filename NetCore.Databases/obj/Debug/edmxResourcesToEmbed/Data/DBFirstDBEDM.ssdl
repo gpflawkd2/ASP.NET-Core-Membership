@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBFirstDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="UserEmail" Type="varchar" MaxLength="320" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="130" Nullable="false" />
+    <Property Name="IsMembershipWithdrawn" Type="bit" Nullable="false" />
+    <Property Name="JoinUtcDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="RolePriority" Type="tinyint" Nullable="false" />
+    <Property Name="ModifiedUtcData" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserRolesByUser">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoleId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="OwnedUtcDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_UserRolesByUser_User_UserId">
+    <End Role="User" Type="Self.User" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserRolesByUser" Type="Self.UserRolesByUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserRolesByUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRolesByUser_UserRole_RoleId">
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserRolesByUser" Type="Self.UserRolesByUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserRole">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserRolesByUser">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBFirstDBModelStoreContainer">
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRole" EntityType="Self.UserRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRolesByUser" EntityType="Self.UserRolesByUser" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_UserRolesByUser_User_UserId" Association="Self.FK_UserRolesByUser_User_UserId">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserRolesByUser" EntitySet="UserRolesByUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRolesByUser_UserRole_RoleId" Association="Self.FK_UserRolesByUser_UserRole_RoleId">
+      <End Role="UserRole" EntitySet="UserRole" />
+      <End Role="UserRolesByUser" EntitySet="UserRolesByUser" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

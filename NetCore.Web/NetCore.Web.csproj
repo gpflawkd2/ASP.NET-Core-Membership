@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\NetCore.Migrations\NetCore.Migrations.csproj" />
     <ProjectReference Include="..\NetCore.Services\NetCore.Services.csproj" />
+    <ProjectReference Include="..\NetCore.Utilities\NetCore.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

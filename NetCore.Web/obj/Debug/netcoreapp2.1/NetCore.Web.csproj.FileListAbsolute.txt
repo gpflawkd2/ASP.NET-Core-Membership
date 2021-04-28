@@ -44,8 +44,10 @@ D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.We
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Data.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Migrations.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Services.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Utilities.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Migrations.pdb
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Services.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Utilities.pdb
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\bin\Debug\netcoreapp2.1\NetCore.Data.pdb
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csprojAssemblyReference.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csproj.CoreCompileInputs.cache
@@ -56,6 +58,7 @@ D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.We
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.TagHelpers.input.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.TagHelpers.output.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.RazorCoreGenerate.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Data\AES.g.cshtml.cs
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Index.g.cshtml.cs
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Login.g.cshtml.cs

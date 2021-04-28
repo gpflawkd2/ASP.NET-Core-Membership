@@ -4654,6 +4654,20 @@
         "runtime": {
           "bin/placeholder/NetCore.Services.dll": {}
         }
+      },
+      "NetCore.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "2.0.2",
+          "Microsoft.Extensions.DependencyInjection": "2.1.0"
+        },
+        "compile": {
+          "bin/placeholder/NetCore.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetCore.Utilities.dll": {}
+        }
       }
     }
   },
@@ -12609,6 +12623,11 @@
       "type": "project",
       "path": "../NetCore.Services/NetCore.Services.csproj",
       "msbuildProject": "../NetCore.Services/NetCore.Services.csproj"
+    },
+    "NetCore.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../NetCore.Utilities/NetCore.Utilities.csproj",
+      "msbuildProject": "../NetCore.Utilities/NetCore.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12619,7 +12638,8 @@
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
       "NetCore.Migrations >= 1.0.0",
-      "NetCore.Services >= 1.0.0"
+      "NetCore.Services >= 1.0.0",
+      "NetCore.Utilities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12657,6 +12677,9 @@
             },
             "D:\\GitHub\\ASP.NET-Core-Membership\\NetCore.Services\\NetCore.Services.csproj": {
               "projectPath": "D:\\GitHub\\ASP.NET-Core-Membership\\NetCore.Services\\NetCore.Services.csproj"
+            },
+            "D:\\GitHub\\ASP.NET-Core-Membership\\NetCore.Utilities\\NetCore.Utilities.csproj": {
+              "projectPath": "D:\\GitHub\\ASP.NET-Core-Membership\\NetCore.Utilities\\NetCore.Utilities.csproj"
             }
           }
         }

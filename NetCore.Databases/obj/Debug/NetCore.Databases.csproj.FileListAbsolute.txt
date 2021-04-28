@@ -1,0 +1,11 @@
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\bin\Debug\NetCore.Databases.dll.config
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\bin\Debug\NetCore.Databases.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\bin\Debug\NetCore.Databases.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\bin\Debug\EntityFramework.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\bin\Debug\EntityFramework.xml
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\obj\Debug\NetCore.Databases.csproj.CoreCompileInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\obj\Debug\NetCore.Databases.csproj.CopyComplete
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\obj\Debug\NetCore.Databases.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Databases\obj\Debug\NetCore.Databases.pdb

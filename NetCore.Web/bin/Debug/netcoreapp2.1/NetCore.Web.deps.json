@@ -30,7 +30,8 @@
           "Microsoft.NETCore.App": "2.1.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.9",
           "NetCore.Migrations": "1.0.0",
-          "NetCore.Services": "1.0.0"
+          "NetCore.Services": "1.0.0",
+          "NetCore.Utilities": "1.0.0"
         },
         "runtime": {
           "NetCore.Web.dll": {}
@@ -693,6 +694,18 @@
         },
         "compile": {
           "NetCore.Services.dll": {}
+        }
+      },
+      "NetCore.Utilities/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "2.1.1",
+          "Microsoft.Extensions.DependencyInjection": "2.1.1"
+        },
+        "runtime": {
+          "NetCore.Utilities.dll": {}
+        },
+        "compile": {
+          "NetCore.Utilities.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3811,6 +3824,11 @@
       "sha512": ""
     },
     "NetCore.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NetCore.Utilities/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

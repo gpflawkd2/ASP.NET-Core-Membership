@@ -11,13 +11,13 @@ namespace NetCore.Utilities.Utils
         /// </summary>
         public enum CryptoType
         {
-            Unmanaged = 1,  // 관리되지 않는 암호화키
+            Unmanaged = 1,
 
-            Managed = 2,    // 관리되는 암호화키
+            Managed = 2,
 
-            CngCbc = 3,     // Cng - Cbc Type
+            CngCbc = 3,
 
-            CngGCM = 4      // Cng - GCM Type
+            CngGcm = 4
         }
     }
 }
