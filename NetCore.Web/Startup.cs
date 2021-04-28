@@ -1,4 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption;
+using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
 using NetCore.Services.Svcs;
+using System;
+using System.IO;
 
 namespace NetCore.Web
 {
@@ -23,6 +28,23 @@ namespace NetCore.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // https://github.com/dotnet/AspNetCore.Docs/blob/main/aspnetcore/security/data-protection/configuration/overview.md 참고
+            // 암호화키 관리 & 만료 기간 & Application 이름 지정 & 암호화 알고리즘 설정
+            services.AddDataProtection()
+                    .PersistKeysToFileSystem(new DirectoryInfo(@"D:\GitHub\DataProtector\"))
+                    .SetDefaultKeyLifetime(TimeSpan.FromDays(7))
+                    .SetApplicationName("NetCore");
+
+            // 서버에서 관리시
+            //.PersistKeysToFileSystem(new DirectoryInfo(@"\\server\share\directory\"))
+            // 암호화 알고리즘 적용
+            //.UseCryptographicAlgorithms(
+            //            new AuthenticatedEncryptorConfiguration()
+            //            {
+            //                EncryptionAlgorithm = EncryptionAlgorithm.AES_256_CBC,
+            //                ValidationAlgorithm = ValidationAlgorithm.HMACSHA256
+            //            })
+
             // 의존성 주입을 사용하기 위해서 서비스로 등록
             // IUser 인터페이스에 UserService 클래스 인스턴스 주입
             services.AddScoped<IUser, UserService>();
