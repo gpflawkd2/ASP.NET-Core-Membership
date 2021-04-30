@@ -98,11 +98,47 @@ namespace NetCore.Services.Svcs
             return GetUserInfo(userId, password) != null ? true : false; 
         }
 
+        private User GetUserInfo(string userId)
+        {
+            return _context.Users.Where(u => u.UserId.Equals(userId)).FirstOrDefault();
+        }
+
+        private IEnumerable<UserRolesByUser> GetUserRolesByUserInfos(string userId)
+        {
+            var userRolesByUserInfos = _context.UserRolesByUsers.Where(uru => uru.UserId.Equals(userId)).ToList();
+
+            foreach(var role in userRolesByUserInfos)
+            {
+                role.UserRole = GetUserRole(role.RoleId);
+            }
+
+            return userRolesByUserInfos.OrderByDescending(urn => urn.UserRole.RolePriority);
+        }
+
+        private UserRole GetUserRole(string roleId)
+        {
+            return _context.UserRoles.Where(ur => ur.RoleId.Equals(roleId)).FirstOrDefault();
+        }
+
         #endregion
+
+        // ----------------------------------------------------
+        // 명시적 인터페이스 구현
+        // ----------------------------------------------------
 
         bool IUser.MatchTheUserInfo(LoginInfoViewModel login)
         {
             return checkTheUserInfo(login.UserId, login.Password);
+        }
+
+        User IUser.GetUserInfo(string userId)
+        {
+            return GetUserInfo(userId);
+        }
+
+        public IEnumerable<UserRolesByUser> GetRolesOwnedByUser(string userId)
+        {
+            return GetUserRolesByUserInfos(userId);
         }
     }
 }

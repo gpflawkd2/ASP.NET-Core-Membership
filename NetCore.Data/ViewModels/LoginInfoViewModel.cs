@@ -14,5 +14,8 @@ namespace NetCore.Data.ViewModels
         [MinLength(6, ErrorMessage = "사용자 아이디는 6자 이상 입력하세요.")]
         [Display(Name = "비밀번호")]
         public string Password { get; set; }
+
+        [Display(Name = "내정보 기억")]
+        public bool RememberMe { get; set; }
     }
 }
