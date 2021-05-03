@@ -13,7 +13,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form method="post" asp-controller="Membership" asp-action="LoginAsync" onsubmit="btnLogin.disabled = true; return true;">
+        <form method="post" asp-route-returnUrl="@ViewData["ReturnUrl"]" asp-controller="Membership" asp-action="LoginAsync" onsubmit="btnLogin.disabled = true; return true;">
             <div class="text-danger" asp-validation-summary="All"></div>
             <div class="form-group">
                 @Html.DisplayNameFor(m => m.UserId)
@@ -33,6 +33,7 @@
                 <span class="text-danger" asp-validation-for="RememberMe"></span>
             </div>
             <button type="submit" name="btnLogin" class="btn btn-lg btn-success btn-block">멤버십 로그인</button>
+            <p style="padding-top:10px;"><a asp-route-returnUrl="@ViewData["ReturnUrl"]" asp-controller="Membership" asp-action="Register" class="btn btn-primary btn-block">멤버십 사용자 가입</a></p>
         </form>
     </div>
 </div>

@@ -74,3 +74,4 @@ D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.We
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.csproj.CopyComplete
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\NetCore.Web.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\obj\Debug\netcoreapp2.1\Razor\Views\Membership\Forbidden.g.cshtml.cs
