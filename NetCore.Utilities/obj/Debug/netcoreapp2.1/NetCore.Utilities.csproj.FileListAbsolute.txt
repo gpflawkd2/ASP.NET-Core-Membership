@@ -1,12 +1,12 @@
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\bin\Debug\netcoreapp2.1\NetCore.Utilities.deps.json
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\bin\Debug\netcoreapp2.1\NetCore.Utilities.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\bin\Debug\netcoreapp2.1\NetCore.Utilities.pdb
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.csprojAssemblyReference.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.csproj.CoreCompileInputs.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.AssemblyInfoInputs.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.AssemblyInfo.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.csproj.CopyComplete
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.pdb
-D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
-D:\GitHub\ASP.NET-Core-Membership\NetCore.Utilities\obj\Debug\netcoreapp2.1\NetCore.Utilities.csproj.CopyComplete

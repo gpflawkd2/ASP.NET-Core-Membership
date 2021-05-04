@@ -4,6 +4,7 @@ using NetCore.Data.Classes;
 using NetCore.Data.ViewModels;
 using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -23,6 +24,10 @@ namespace NetCore.Services.Svcs
 
         #region private methods
 
+        /// <summary>
+        /// 사용자 리스트 조회
+        /// </summary>
+        /// <returns></returns>
         private IEnumerable<User> GetUserInfos()
         {
             return _context.Users.ToList();
@@ -38,6 +43,12 @@ namespace NetCore.Services.Svcs
             //};
         }
 
+        /// <summary>
+        /// 로그인을 위한 사용자 정보 조회
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         private User GetUserInfo(string userId, string password)
         {
             User user;
@@ -92,6 +103,12 @@ namespace NetCore.Services.Svcs
             return user;
         }
 
+        /// <summary>
+        /// 사용자 데이터 유무 체크
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         private bool checkTheUserInfo(string userId, string password)
         {
             // Any() : 리스트 데이터 유무체크(리스트 형식에서만 가능)
@@ -100,11 +117,22 @@ namespace NetCore.Services.Svcs
             return GetUserInfo(userId, password) != null ? true : false; 
         }
 
+
+        /// <summary>
+        /// 사용자 상세정보 조회
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         private User GetUserInfo(string userId)
         {
             return _context.Users.Where(u => u.UserId.Equals(userId)).FirstOrDefault();
         }
 
+        /// <summary>
+        /// 로그인한 사용자 권한 정보 조회
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
         private IEnumerable<UserRolesByUser> GetUserRolesByUserInfos(string userId)
         {
             var userRolesByUserInfos = _context.UserRolesByUsers.Where(uru => uru.UserId.Equals(userId)).ToList();
@@ -117,9 +145,46 @@ namespace NetCore.Services.Svcs
             return userRolesByUserInfos.OrderByDescending(urn => urn.UserRole.RolePriority);
         }
 
+        /// <summary>
+        /// 권한 상세 정보 조회
+        /// </summary>
+        /// <param name="roleId"></param>
+        /// <returns></returns>
         private UserRole GetUserRole(string roleId)
         {
             return _context.UserRoles.Where(ur => ur.RoleId.Equals(roleId)).FirstOrDefault();
+        }
+
+        // ToLower() => 아이디 대소문자 처리
+        private int RegisterUser(RegisterInfoViewModel register)
+        {
+            var utcNow = DateTime.UtcNow;
+            var passwordInfo = _hasher.SetPasswordInfo(register.UserId, register.Password);
+
+            var user = new User()
+            {
+                UserId = register.UserId.ToLower(),
+                UserName = register.UserName,
+                UserEmail = register.UserEmail,
+                GUIDSalt = passwordInfo.GUIDSalt,
+                RNGSalt = passwordInfo.RNGSalt,
+                PasswordHash = passwordInfo.PasswordHash,
+                AccessFailedCount = 0,
+                IsMembershipWithdrawn = false,
+                JoinUtcDate = utcNow
+            };
+
+            var userRolesByUser = new UserRolesByUser()
+            {
+                UserId = register.UserId.ToLower(),
+                RoleId = "AssociateUser",
+                OwnedUtcDate = utcNow
+            };
+
+            _context.Add(user);
+            _context.Add(userRolesByUser);
+
+            return _context.SaveChanges();
         }
 
         #endregion
@@ -149,6 +214,16 @@ namespace NetCore.Services.Svcs
         public IEnumerable<UserRolesByUser> GetRolesOwnedByUser(string userId)
         {
             return GetUserRolesByUserInfos(userId);
+        }
+
+        IEnumerable<UserRolesByUser> IUser.GetRolesOwnedByUser(string userId)
+        {
+            return GetUserRolesByUserInfos(userId);
+        }
+
+        int IUser.RegisterUser(RegisterInfoViewModel register)
+        {
+            return RegisterUser(register);
         }
     }
 }

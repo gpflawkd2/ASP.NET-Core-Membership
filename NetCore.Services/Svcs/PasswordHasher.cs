@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+using NetCore.Services.Bridges;
 using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
 using System;
@@ -39,13 +40,15 @@ namespace NetCore.Services.Svcs
             return Convert.ToBase64String(salt);
         }
 
+        // ToLower() => 아이디 & 비밀번호 대소문자 처리
         private string GetPasswordHash(string userId, string password, string guidSalt, string rngSalt)
         {
             // Derive a 256-bit subkey (use HMACHA1 with 10,000 iterations)
             // Pbkdf2
             // Password-based key derivation function 2
+            // ToLower(): 소문자 변환
             return Convert.ToBase64String(KeyDerivation.Pbkdf2(
-                password: userId + password + guidSalt,
+                password: userId.ToLower() + password.ToLower() + guidSalt,
                 salt: Encoding.UTF8.GetBytes(rngSalt),
                 prf: KeyDerivationPrf.HMACSHA512,
                 iterationCount: 45000, //10000, 25000, 45000
@@ -55,6 +58,21 @@ namespace NetCore.Services.Svcs
         private bool CheckThePasswordInfo(string userId, string password, string guidSalt, string rngSalt, string passwordHash)
         {
             return GetPasswordHash(userId, password, guidSalt, rngSalt).Equals(passwordHash);
+        }
+
+        private PasswordHashInfo PasswordInfo(string userId, string password)
+        {
+            string guidSalt = GetGUIDSalt();
+            string rngSalt = GetRNGSalt();
+
+            var passwordInfo = new PasswordHashInfo()
+            {
+                GUIDSalt = guidSalt,
+                RNGSalt = rngSalt,
+                PasswordHash = GetPasswordHash(userId, password, guidSalt, rngSalt)
+            };
+
+            return passwordInfo;
         }
 
         #endregion
@@ -81,6 +99,11 @@ namespace NetCore.Services.Svcs
         bool IPasswordHasher.CheckThePasswordInfo(string userId, string password, string guidSalt, string rngSalt, string passwordHash)
         {
             return CheckThePasswordInfo(userId, password, guidSalt, rngSalt, passwordHash);
+        }
+
+        PasswordHashInfo IPasswordHasher.SetPasswordInfo(string userId, string password)
+        {
+            return PasswordInfo(userId, password);
         }
     }
 }
