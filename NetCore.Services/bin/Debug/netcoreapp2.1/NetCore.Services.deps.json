@@ -1,19 +1,39 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "9cf18eccb9baeb55338804c5d924714689971553"
+    "signature": "2960eda4ab287a131018d75131383790ec7ac748"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "NetCore.Services/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.0.2",
           "Microsoft.EntityFrameworkCore": "2.1.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.14",
           "NetCore.Data": "1.0.0"
         },
         "runtime": {
           "NetCore.Services.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.Internal/2.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.2.18051"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/2.0.2": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "2.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {
+            "assemblyVersion": "2.0.2.0",
+            "fileVersion": "2.0.2.18051"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore/2.1.14": {
@@ -520,6 +540,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Microsoft.AspNetCore.Cryptography.Internal/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pCJyY7vC6YWY94ssKcgGzVFGsK/bk7RVEH/BxwHmc+T3t5VmXlBq7VvUmhLfk+P5Uc1l0hDIJX0ZJRLy9Sz1jg==",
+      "path": "microsoft.aspnetcore.cryptography.internal/2.0.2",
+      "hashPath": "microsoft.aspnetcore.cryptography.internal.2.0.2.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JblI3dWCRga40Y6PFUNsdGMAgmMu7Igb9sAtcG3nY8O2tvfuqwkpzGao8KE081KBndGGBcLUD4iWDkoMoGOQVQ==",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/2.0.2",
+      "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.2.0.2.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore/2.1.14": {
       "type": "package",

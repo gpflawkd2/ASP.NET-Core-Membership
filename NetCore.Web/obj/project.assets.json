@@ -4644,6 +4644,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.0.2",
           "Microsoft.EntityFrameworkCore": "2.1.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.14",
           "NetCore.Data": "1.0.0"

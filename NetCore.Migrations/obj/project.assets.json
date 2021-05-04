@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "Microsoft.AspNetCore.Cryptography.Internal/2.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Cryptography.KeyDerivation/2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.Internal": "2.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/2.1.14": {
         "type": "package",
         "dependencies": {
@@ -923,6 +944,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "Microsoft.AspNetCore.Cryptography.KeyDerivation": "2.0.2",
           "Microsoft.EntityFrameworkCore": "2.1.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.14",
           "NetCore.Data": "1.0.0"
@@ -937,6 +959,32 @@
     }
   },
   "libraries": {
+    "Microsoft.AspNetCore.Cryptography.Internal/2.0.2": {
+      "sha512": "pCJyY7vC6YWY94ssKcgGzVFGsK/bk7RVEH/BxwHmc+T3t5VmXlBq7VvUmhLfk+P5Uc1l0hDIJX0ZJRLy9Sz1jg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.cryptography.internal/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.Internal.xml",
+        "microsoft.aspnetcore.cryptography.internal.2.0.2.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.internal.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Cryptography.KeyDerivation/2.0.2": {
+      "sha512": "JblI3dWCRga40Y6PFUNsdGMAgmMu7Igb9sAtcG3nY8O2tvfuqwkpzGao8KE081KBndGGBcLUD4iWDkoMoGOQVQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.cryptography.keyderivation/2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
+        "microsoft.aspnetcore.cryptography.keyderivation.2.0.2.nupkg.sha512",
+        "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/2.1.14": {
       "sha512": "O0wA24LYfIxcK21uXYie/djVxFtKtg52IGGcuyc1u6/7i3PjBi/kYeUhrMZ4JK/7NGDf/t8gtTop5mUwapYt1Q==",
       "type": "package",

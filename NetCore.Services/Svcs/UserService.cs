@@ -13,10 +13,12 @@ namespace NetCore.Services.Svcs
     {
 
         private DBFirstDbContext _context;
+        private IPasswordHasher _hasher;
 
-        public UserService(DBFirstDbContext context)
+        public UserService(DBFirstDbContext context, IPasswordHasher hasher)
         {
             _context = context;
+            _hasher = hasher;
         }
 
         #region private methods
@@ -128,7 +130,15 @@ namespace NetCore.Services.Svcs
 
         bool IUser.MatchTheUserInfo(LoginInfoViewModel login)
         {
-            return checkTheUserInfo(login.UserId, login.Password);
+            var user = _context.Users.Where(u => u.UserId.Equals(login.UserId)).FirstOrDefault();
+
+            if (user == null)
+            {
+                return false;
+            }
+            
+            return _hasher.CheckThePasswordInfo(login.UserId, login.Password, user.GUIDSalt, user.RNGSalt, user.PasswordHash);
+            //return checkTheUserInfo(login.UserId, login.Password);
         }
 
         User IUser.GetUserInfo(string userId)

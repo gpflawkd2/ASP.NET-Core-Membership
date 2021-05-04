@@ -18,11 +18,13 @@ namespace NetCore.Web.Controllers
     {
         // 의존성 주입 - 생성자
         private IUser _user;
+        private IPasswordHasher _hasher;
         private HttpContext _context;
 
-        public MembershipController(IHttpContextAccessor accessor, IUser user)
+        public MembershipController(IHttpContextAccessor accessor, IPasswordHasher hasher, IUser user)
         {
             _context = accessor.HttpContext;
+            _hasher = hasher;
             _user = user;
         }
 
@@ -77,10 +79,15 @@ namespace NetCore.Web.Controllers
 
             if (ModelState.IsValid)
             {
-                //if (login.UserId.Equals(userId) && login.Password.Equals(password))
                 // 뷰모델
                 // 서비스 개념
-                if(_user.MatchTheUserInfo(login))
+
+                //string guidSalt = _hasher.GetGUIDSalt();
+                //string rngSalt = _hasher.GetRNGSalt();
+                //string passwordHash = _hasher.GetPasswordHash(login.UserId, login.Password, guidSalt, rngSalt);
+
+                //if (login.UserId.Equals(userId) && login.Password.Equals(password))
+                if (_user.MatchTheUserInfo(login))
                 {
                     // 신원보증과 승인권한
                     var userInfo = _user.GetUserInfo(login.UserId);
@@ -144,6 +151,8 @@ namespace NetCore.Web.Controllers
         public IActionResult Forbidden()
         {
             StringValues paramReturnUrl;
+
+            //paramReturnUrl[0] => /Data/AES
 
             bool exists = _context.Request.Query.TryGetValue("returnUrl", out paramReturnUrl);
 
