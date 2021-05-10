@@ -187,6 +187,71 @@ namespace NetCore.Services.Svcs
             return _context.SaveChanges();
         }
 
+        private UserInfoViewModel GetUserInfoForUpdate(string userId)
+        {
+            var user = GetUserInfo(userId);
+            var userInfo = new UserInfoViewModel()
+            {
+                UserId = null,
+                UserName = user.UserName,
+                UserEmail = user.UserEmail,
+                ChangeInfo = new ChangeInfoViewModel()
+                {
+                    UserName = user.UserName,
+                    UserEmail = user.UserEmail
+                }
+            };
+
+            return userInfo;
+        }
+
+        private int UpdateUser(UserInfoViewModel user)
+        {
+            // 파라미터에 class 생성하여 전달시 참고
+            //bool check = MatchTheUserInfo(new LoginInfoViewModel() { UserId = user.UserId, Password = user.Password});
+
+            int rowAffected = 0;
+
+            var userInfo = _context.Users.Where(u => u.UserId.Equals(user.UserId)).FirstOrDefault();
+
+            if (userInfo == null)
+            {
+                return 0;
+            }
+
+            bool check = _hasher.CheckThePasswordInfo(user.UserId, user.Password, userInfo.GUIDSalt, userInfo.RNGSalt, userInfo.PasswordHash);
+
+            if (check)
+            {
+                _context.Update(userInfo);
+
+                // 업데이트 대상 컬럼 설정
+                userInfo.UserName = user.UserName;
+                userInfo.UserEmail = user.UserEmail;
+
+                rowAffected = _context.SaveChanges();
+            }
+
+            return rowAffected;
+        }
+
+        private bool CompareInfo(UserInfoViewModel user)
+        {
+            return user.ChangeInfo.Equals(user);
+        }
+
+        private bool MatchTheUserInfo(LoginInfoViewModel login)
+        {
+            var user = _context.Users.Where(u => u.UserId.Equals(login.UserId)).FirstOrDefault();
+
+            if (user == null)
+            {
+                return false;
+            }
+
+            return _hasher.CheckThePasswordInfo(login.UserId, login.Password, user.GUIDSalt, user.RNGSalt, user.PasswordHash);
+        }
+
         #endregion
 
         // ----------------------------------------------------
@@ -195,14 +260,7 @@ namespace NetCore.Services.Svcs
 
         bool IUser.MatchTheUserInfo(LoginInfoViewModel login)
         {
-            var user = _context.Users.Where(u => u.UserId.Equals(login.UserId)).FirstOrDefault();
-
-            if (user == null)
-            {
-                return false;
-            }
-            
-            return _hasher.CheckThePasswordInfo(login.UserId, login.Password, user.GUIDSalt, user.RNGSalt, user.PasswordHash);
+            return MatchTheUserInfo(login);
             //return checkTheUserInfo(login.UserId, login.Password);
         }
 
@@ -224,6 +282,21 @@ namespace NetCore.Services.Svcs
         int IUser.RegisterUser(RegisterInfoViewModel register)
         {
             return RegisterUser(register);
+        }
+
+        UserInfoViewModel IUser.GetUserInfoForUpdate(string userId)
+        {
+            return GetUserInfoForUpdate(userId);
+        }
+
+        int IUser.UpdateUser(UserInfoViewModel user)
+        {
+            return UpdateUser(user);
+        }
+
+        bool IUser.CompareInfo(UserInfoViewModel user)
+        {
+            return CompareInfo(user);
         }
     }
 }

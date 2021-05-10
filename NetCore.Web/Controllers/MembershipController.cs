@@ -98,8 +98,6 @@ namespace NetCore.Web.Controllers
                                           userInfo.UserName + "|" +
                                           userInfo.UserEmail;
 
-                    //_context.User.Identity.Name => 사용자 아이디
-
                     var identity = new ClaimsIdentity(claims:new[] 
                     {
                       new Claim(type:ClaimTypes.Name,
@@ -176,6 +174,55 @@ namespace NetCore.Web.Controllers
 
             return View(register);
         }
+
+        [HttpGet]
+        public IActionResult UpdateInfo()
+        {
+            //_context.User.Identity.Name => 사용자 아이디
+            UserInfoViewModel user = _user.GetUserInfoForUpdate(_context.User.Identity.Name);
+
+            return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdateInfo(UserInfoViewModel user)
+        {
+            string message = string.Empty;
+
+            if (ModelState.IsValid)
+            {
+                // 변경대상 값 비교
+                if(_user.CompareInfo(user))
+                {
+                    message = "하나 이상의 값이 변경되어야 정보수정이 가능합니다.";
+
+                    ModelState.AddModelError(string.Empty, message);
+                    return View(user);
+                }
+
+                // 정보수정 서비스
+                if(_user.UpdateUser(user) > 0)
+                {
+                    TempData["Message"] = "사용자 정보수정이 성공적으로 이루어졌습니다.";
+
+                    return RedirectToAction("UpdateInfo", "Membership");
+                }
+                else
+                {
+                    message = "사용자 정보가 수정되지 않았습니다.";
+                }
+               
+            }
+            else
+            {
+                message = "사용자 정보수정을 위한 정보를 올바르게 입력하세요.";
+            }
+
+            ModelState.AddModelError(string.Empty, message);
+            return View(user);
+        }
+
 
         [HttpGet("/LogOut")]
         public async Task<IActionResult> LogOutAsync()
