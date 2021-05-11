@@ -235,11 +235,6 @@ namespace NetCore.Services.Svcs
             return rowAffected;
         }
 
-        private bool CompareInfo(UserInfoViewModel user)
-        {
-            return user.ChangeInfo.Equals(user);
-        }
-
         private bool MatchTheUserInfo(LoginInfoViewModel login)
         {
             var user = _context.Users.Where(u => u.UserId.Equals(login.UserId)).FirstOrDefault();
@@ -250,6 +245,32 @@ namespace NetCore.Services.Svcs
             }
 
             return _hasher.CheckThePasswordInfo(login.UserId, login.Password, user.GUIDSalt, user.RNGSalt, user.PasswordHash);
+        }
+
+        private bool CompareInfo(UserInfoViewModel user)
+        {
+            return user.ChangeInfo.Equals(user);
+        }
+
+        private int WithdrawnUser(WithdrawnInfo user)
+        {
+            var userInfo = _context.Users.Where(u => u.UserId.Equals(user.UserId)).FirstOrDefault();
+
+            if (userInfo == null)
+            {
+                return 0;
+            }
+
+            bool check = _hasher.CheckThePasswordInfo(user.UserId, user.Password, userInfo.GUIDSalt, userInfo.RNGSalt, userInfo.PasswordHash);
+            int rowAffected = 0;
+
+            if (check)
+            {
+                _context.Remove(userInfo);
+                rowAffected = _context.SaveChanges();
+            }
+
+            return rowAffected;
         }
 
         #endregion
@@ -297,6 +318,11 @@ namespace NetCore.Services.Svcs
         bool IUser.CompareInfo(UserInfoViewModel user)
         {
             return CompareInfo(user);
+        }
+
+        int IUser.WithdrawnUser(WithdrawnInfo user)
+        {
+            return WithdrawnUser(user);
         }
     }
 }
