@@ -31,6 +31,7 @@ namespace NetCore.Web
 
             // 의존성 주입을 사용하기 위해서 서비스로 등록
             // IUser 인터페이스에 UserService 클래스 인스턴스 주입
+            services.AddScoped<DBFirstDbInitializer>();
             services.AddScoped<IUser, UserService>();
             services.AddScoped<IPasswordHasher, PasswordHasher>();
 
@@ -69,7 +70,7 @@ namespace NetCore.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, DBFirstDbInitializer seeder)
         {
             if (env.IsDevelopment())
             {
@@ -91,6 +92,8 @@ namespace NetCore.Web
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            seeder.PlantSeedData();
         }
     }
 }
