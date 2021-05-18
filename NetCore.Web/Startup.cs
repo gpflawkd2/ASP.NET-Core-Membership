@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
 using NetCore.Services.Svcs;
@@ -51,6 +52,14 @@ namespace NetCore.Web
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+            //Logging
+            services.AddLogging(builder =>
+            {
+                builder.AddConfiguration(Configuration.GetSection(key: "Logging"));
+                builder.AddConsole();
+                builder.AddDebug();
             });
 
             // MVC 패턴을 사용하기 위해서 서비스로 등록

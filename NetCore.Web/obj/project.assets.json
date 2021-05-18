@@ -2736,6 +2736,18 @@
           }
         }
       },
+      "NetEscapades.Extensions.Logging.RollingFile/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -7573,6 +7585,19 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NetEscapades.Extensions.Logging.RollingFile/2.2.0": {
+      "sha512": "khaUvjRTcLH9MSHdnKZ+cBcZR8CLvyTlP1TzSCfG/pyIOQGLizv1qV8wkOCsek8+x5+MxH2EmCIGR/f+VZnmzg==",
+      "type": "package",
+      "path": "netescapades.extensions.logging.rollingfile/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll",
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.xml",
+        "netescapades.extensions.logging.rollingfile.2.2.0.nupkg.sha512",
+        "netescapades.extensions.logging.rollingfile.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -12640,7 +12665,8 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.9",
       "NetCore.Migrations >= 1.0.0",
       "NetCore.Services >= 1.0.0",
-      "NetCore.Utilities >= 1.0.0"
+      "NetCore.Utilities >= 1.0.0",
+      "NetEscapades.Extensions.Logging.RollingFile >= 2.2.0"
     ]
   },
   "packageFolders": {
@@ -12719,6 +12745,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[2.1.9, )"
+          },
+          "NetEscapades.Extensions.Logging.RollingFile": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           }
         },
         "imports": [

@@ -3,11 +3,13 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Primitives;
 using NetCore.Data.ViewModels;
 using NetCore.Services.Interfaces;
 using System;
 using System.Linq;
+using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
 
@@ -262,15 +264,19 @@ namespace NetCore.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Forbidden()
+        //[FromServices]: 해당 Action 함수에만 의존성 주입 처리
+        public IActionResult Forbidden([FromServices] ILogger<MembershipController> logger)
         {
             StringValues paramReturnUrl;
 
             //paramReturnUrl[0] => /Data/AES
 
             bool exists = _context.Request.Query.TryGetValue("returnUrl", out paramReturnUrl);
-
             paramReturnUrl = exists ? _context.Request.Host.Value + paramReturnUrl[0] : string.Empty;
+
+            // MethodBase.GetCurrentMethod().Name: 현재 함수 정보를 가지고옴
+            // logger.LogTrace
+            logger.LogInformation($"{MethodBase.GetCurrentMethod().Name}함수 접근 에러 처리.returnUrl : {paramReturnUrl}");
 
             ViewData["Message"] = $"귀하는 {paramReturnUrl} 경로로 접근하려고 했습니다만,<br />" +
                                    "인증된 사용자도 접근하지 못하는 페이지가 있습니다.<br />" + 

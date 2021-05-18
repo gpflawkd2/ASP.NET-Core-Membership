@@ -15,7 +15,7 @@ namespace NetCore.Web.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "GeneralUser, SuperUser, SystemUser")]
+        [Authorize(Roles = "SuperUser, SystemUser")]
         public IActionResult AES()
         {
             return View();
@@ -23,7 +23,7 @@ namespace NetCore.Web.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "GeneralUser, SuperUser, SystemUser")]
+        [Authorize(Roles = "SuperUser, SystemUser")]
         public IActionResult AES(AESInfo aes)
         {
             string message = string.Empty;
