@@ -64,7 +64,7 @@ namespace NetCore.Web.Controllers
         {
             ViewData["ReturnUrl"] = returnUrl;
 
-            return View();
+            return View(new LoginInfoViewModel());
         }
 
         [HttpPost("/Login")]
@@ -141,7 +141,7 @@ namespace NetCore.Web.Controllers
         public IActionResult Register(string returnUrl)
         {
             ViewData["ReturnUrl"] = returnUrl;
-            return View();
+            return View(new RegisterInfoViewModel());
         }
 
         [HttpPost]

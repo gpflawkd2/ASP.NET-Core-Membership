@@ -1,0 +1,488 @@
+2021-05-18 10:27:43.827 +09:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Creating key {0844e2df-94c4-4ff6-9756-077d046ba759} with creation date 2021-05-18 01:27:43Z, activation date 2021-05-18 01:27:43Z, and expiration date 2021-05-25 01:27:43Z.
+2021-05-18 10:27:43.834 +09:00 [Warning] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {0844e2df-94c4-4ff6-9756-077d046ba759} may be persisted to storage in unencrypted form.
+2021-05-18 10:27:43.836 +09:00 [Information] Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository: Writing data to file 'D:\GitHub\_DataProtector\key-0844e2df-94c4-4ff6-9756-077d046ba759.xml'.
+2021-05-18 10:27:44.091 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:27:44.154 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-05-18 10:27:44.207 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:27:44.216 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:27:44.220 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:27:44.332 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-05-18 10:27:44.414 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-05-18 10:27:44.420 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:27:44.421 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2547ms.
+2021-05-18 10:27:44.431 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:27:44.493 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 68.0684ms.
+2021-05-18 10:27:44.493 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 79.3003ms
+2021-05-18 10:27:44.498 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 166.1718ms 200 text/html; charset=utf-8
+2021-05-18 10:27:44.530 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/css/site.css  
+2021-05-18 10:27:44.531 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/css/bootstrap.css  
+2021-05-18 10:27:44.535 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+2021-05-18 10:27:44.535 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /css/site.css was not modified
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 7.2334ms 304 text/css
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 6.7865ms 304 text/css
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/jquery/dist/jquery.js  
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/images/banner1.svg  
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/js/bootstrap.js  
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /images/banner1.svg was not modified
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /lib/jquery/dist/jquery.js was not modified
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.1263ms 304 application/javascript
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.2596ms 304 image/svg+xml
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.2839ms 304 application/javascript
+2021-05-18 10:27:44.538 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /js/site.js was not modified
+2021-05-18 10:27:44.539 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.9366ms 304 application/javascript
+2021-05-18 10:27:44.546 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/images/banner3.svg  
+2021-05-18 10:27:44.546 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/images/banner2.svg  
+2021-05-18 10:27:44.547 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /images/banner3.svg was not modified
+2021-05-18 10:27:44.547 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /images/banner2.svg was not modified
+2021-05-18 10:27:44.547 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.2775ms 304 image/svg+xml
+2021-05-18 10:27:44.547 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.2985ms 304 image/svg+xml
+2021-05-18 10:27:44.584 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+2021-05-18 10:27:44.585 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: The file /lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2 was not modified
+2021-05-18 10:27:44.585 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.5897ms 304 font/woff2
+2021-05-18 10:27:54.075 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:27:54.156 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-05-18 10:27:54.212 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:27:54.222 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:27:54.225 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:27:54.512 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-05-18 10:27:54.513 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:52777/  0
+2021-05-18 10:27:54.542 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 29.3933ms 200 
+2021-05-18 10:27:54.650 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-05-18 10:27:54.660 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:27:54.663 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5774ms.
+2021-05-18 10:27:54.682 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:27:54.765 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 95.0539ms.
+2021-05-18 10:27:54.766 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 115.0933ms
+2021-05-18 10:27:54.773 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 262.0446ms 200 text/html; charset=utf-8
+2021-05-18 10:27:57.998 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:27:58.001 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:27:58.002 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:28:14.376 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16369.5299ms.
+2021-05-18 10:28:14.390 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:28:14.405 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 27.6276ms.
+2021-05-18 10:28:14.407 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 16404.8429ms
+2021-05-18 10:28:14.409 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 16410.6128ms 200 text/html; charset=utf-8
+2021-05-18 10:28:23.381 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCard application/x-www-form-urlencoded 225
+2021-05-18 10:28:23.383 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2.4694ms 404 
+2021-05-18 10:28:23.390 +09:00 [Information] Microsoft.AspNetCore.Server.Kestrel: Connection id "0HM8PJGKHCNF2", Request id "0HM8PJGKHCNF2:00000002": the application completed without reading the entire request body.
+2021-05-18 10:28:39.540 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:28:39.625 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-05-18 10:28:39.679 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:28:39.689 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:28:39.693 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:28:39.802 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:52777/  0
+2021-05-18 10:28:39.804 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-05-18 10:28:39.857 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 25.4617ms 200 
+2021-05-18 10:28:39.955 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-05-18 10:28:39.963 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:28:39.966 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3525ms.
+2021-05-18 10:28:39.980 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:28:40.055 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 83.5202ms.
+2021-05-18 10:28:40.057 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 100.0002ms
+2021-05-18 10:28:40.063 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 260.9923ms 200 text/html; charset=utf-8
+2021-05-18 10:28:41.645 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:28:41.651 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:28:41.653 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:28:44.199 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 2545.4825ms.
+2021-05-18 10:28:44.206 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:28:44.217 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 15.7877ms.
+2021-05-18 10:28:44.219 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 2566.4015ms
+2021-05-18 10:28:44.221 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2575.9377ms 200 text/html; charset=utf-8
+2021-05-18 10:28:45.621 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCard application/x-www-form-urlencoded 225
+2021-05-18 10:28:45.623 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2.344ms 404 
+2021-05-18 10:28:45.630 +09:00 [Information] Microsoft.AspNetCore.Server.Kestrel: Connection id "0HM8PJH21BMER", Request id "0HM8PJH21BMER:00000002": the application completed without reading the entire request body.
+2021-05-18 10:30:08.310 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:30:08.395 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (13ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-05-18 10:30:08.451 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:30:08.461 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:30:08.466 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:30:08.637 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-05-18 10:30:08.638 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:52777/  0
+2021-05-18 10:30:08.664 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 26.1502ms 200 
+2021-05-18 10:30:08.761 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-05-18 10:30:08.769 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:30:08.773 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.3794ms.
+2021-05-18 10:30:08.789 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:30:08.863 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 84.2159ms.
+2021-05-18 10:30:08.864 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 102.0447ms
+2021-05-18 10:30:08.871 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 234.5952ms 200 text/html; charset=utf-8
+2021-05-18 10:30:17.989 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:30:17.992 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:30:17.993 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:30:21.319 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3324.9871ms.
+2021-05-18 10:30:21.323 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:30:21.346 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 24.963ms.
+2021-05-18 10:30:21.347 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 3354.2078ms
+2021-05-18 10:30:21.349 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 3360.0222ms 200 text/html; charset=utf-8
+2021-05-18 10:30:23.279 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-05-18 10:30:23.284 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:30:23.299 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:32:52.997 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 149692.9769ms.
+2021-05-18 10:32:52.998 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-05-18 10:32:52.999 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 149713.5361ms
+2021-05-18 10:32:53.007 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Session started; Key:edc48bfd-e17c-1226-e998-76a9cf8e1c43, Id:84a601c4-a1b2-b522-19ee-a89c098312d8
+2021-05-18 10:32:53.010 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 149730.2593ms 302 
+2021-05-18 10:32:53.015 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:32:53.016 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:32:53.017 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:32:56.252 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3233.9657ms.
+2021-05-18 10:32:56.254 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:32:56.256 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 2.3062ms.
+2021-05-18 10:32:56.257 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 3239.6957ms
+2021-05-18 10:32:56.258 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 3243.1753ms 200 text/html; charset=utf-8
+2021-05-18 10:34:00.368 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-05-18 10:34:00.373 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:00.375 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:04.085 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 3708.9368ms.
+2021-05-18 10:34:04.089 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-05-18 10:34:04.090 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 3715.6908ms
+2021-05-18 10:34:04.091 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 3728.6005ms 302 
+2021-05-18 10:34:04.099 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:34:04.100 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:04.102 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:38.285 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 34159.1446ms.
+2021-05-18 10:34:38.289 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:34:38.293 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 6.6882ms.
+2021-05-18 10:34:38.294 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 34192.7485ms
+2021-05-18 10:34:38.295 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 34196.5696ms 200 text/html; charset=utf-8
+2021-05-18 10:34:56.643 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-05-18 10:34:56.645 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:56.647 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:56.648 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.0622ms.
+2021-05-18 10:34:56.649 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-05-18 10:34:56.651 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 4.23ms
+2021-05-18 10:34:56.652 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.627ms 302 
+2021-05-18 10:34:56.655 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:34:56.656 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:56.657 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:56.658 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0518ms.
+2021-05-18 10:34:56.659 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:34:56.661 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.6764ms.
+2021-05-18 10:34:56.662 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 5.2473ms
+2021-05-18 10:34:56.664 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.7743ms 200 text/html; charset=utf-8
+2021-05-18 10:34:57.364 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-05-18 10:34:57.365 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:57.367 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:57.369 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.0685ms.
+2021-05-18 10:34:57.370 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-05-18 10:34:57.371 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 4.2068ms
+2021-05-18 10:34:57.372 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.9924ms 302 
+2021-05-18 10:34:57.375 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:34:57.376 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:57.377 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:57.378 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0641ms.
+2021-05-18 10:34:57.379 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:34:57.381 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.7534ms.
+2021-05-18 10:34:57.383 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 5.1064ms
+2021-05-18 10:34:57.384 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.9666ms 200 text/html; charset=utf-8
+2021-05-18 10:34:57.826 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-05-18 10:34:57.827 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:57.829 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:57.830 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.0551ms.
+2021-05-18 10:34:57.831 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-05-18 10:34:57.832 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 3.4678ms
+2021-05-18 10:34:57.833 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 7.7858ms 302 
+2021-05-18 10:34:57.836 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:34:57.837 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:57.838 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:57.839 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0529ms.
+2021-05-18 10:34:57.840 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:34:57.842 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.4648ms.
+2021-05-18 10:34:57.843 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 4.5655ms
+2021-05-18 10:34:57.844 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.0465ms 200 text/html; charset=utf-8
+2021-05-18 10:34:58.493 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-05-18 10:34:58.494 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:58.496 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:58.497 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.AddCart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.0656ms.
+2021-05-18 10:34:58.498 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-05-18 10:34:58.499 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 3.7534ms
+2021-05-18 10:34:58.501 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 7.5703ms 302 
+2021-05-18 10:34:58.506 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:34:58.507 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:34:58.508 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:34:58.509 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.056ms.
+2021-05-18 10:34:58.510 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:34:58.512 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.5497ms.
+2021-05-18 10:34:58.513 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 4.832ms
+2021-05-18 10:34:58.514 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.3626ms 200 text/html; charset=utf-8
+2021-05-18 10:35:46.540 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Data/RemoveCart application/x-www-form-urlencoded 225
+2021-05-18 10:35:46.542 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "RemoveCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:35:46.544 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:36:37.830 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 51261.0687ms.
+2021-05-18 10:36:37.834 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-05-18 10:36:37.837 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web) in 51291.1747ms
+2021-05-18 10:36:37.840 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 51298.2255ms 302 
+2021-05-18 10:36:37.844 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-05-18 10:36:37.846 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-05-18 10:36:37.847 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web) - Validation state: Valid
+2021-05-18 10:36:37.849 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.Cart (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0249ms.
+2021-05-18 10:36:37.850 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-05-18 10:36:37.852 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.7253ms.
+2021-05-18 10:36:37.853 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 5.5553ms
+2021-05-18 10:36:37.856 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 10.0568ms 200 text/html; charset=utf-8
+2021-05-18 10:51:54.715 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:51:54.769 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-05-18 10:51:54.816 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:51:54.825 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:51:54.827 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-05-18 10:51:55.141 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-05-18 10:51:55.218 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-05-18 10:51:55.224 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:51:55.225 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.255ms.
+2021-05-18 10:51:55.236 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:51:55.299 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 70.2124ms.
+2021-05-18 10:51:55.300 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 81.7766ms
+2021-05-18 10:51:55.305 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 163.8042ms 200 text/html; charset=utf-8
+2021-05-18 10:51:57.104 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login  
+2021-05-18 10:51:57.113 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:51:57.120 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) - Validation state: Valid
+2021-05-18 10:51:57.120 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2251ms.
+2021-05-18 10:51:57.122 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-05-18 10:51:57.150 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 30.3712ms.
+2021-05-18 10:51:57.150 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 37.4019ms
+2021-05-18 10:51:57.151 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 46.9586ms 200 text/html; charset=utf-8
+2021-05-18 10:52:02.785 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Login application/x-www-form-urlencoded 275
+2021-05-18 10:52:02.791 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "LoginAsync", controller = "Membership"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(NetCore.Data.ViewModels.LoginInfoViewModel, System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:52:02.811 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web) - Validation state: Valid
+2021-05-18 10:52:02.814 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:52:02.830 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[@__login_UserId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__login_UserId_0
+2021-05-18 10:52:02.882 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2021-05-18 10:52:02.887 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uru].[UserId], [uru].[RoleId], [uru].[OwnedUtcDate]
+FROM [UserRolesByUser] AS [uru]
+WHERE [uru].[UserId] = @__userId_0
+2021-05-18 10:52:02.899 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ur].[RoleId], [ur].[ModifiedUtcData], [ur].[RoleName], [ur].[RolePriority]
+FROM [UserRole] AS [ur]
+WHERE [ur].[RoleId] = @__roleId_0
+2021-05-18 10:52:02.909 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ur].[RoleId], [ur].[ModifiedUtcData], [ur].[RoleName], [ur].[RolePriority]
+FROM [UserRole] AS [ur]
+WHERE [ur].[RoleId] = @__roleId_0
+2021-05-18 10:52:02.909 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ur].[RoleId], [ur].[ModifiedUtcData], [ur].[RoleName], [ur].[RolePriority]
+FROM [UserRole] AS [ur]
+WHERE [ur].[RoleId] = @__roleId_0
+2021-05-18 10:52:02.914 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed in.
+2021-05-18 10:52:02.914 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 102.9097ms.
+2021-05-18 10:52:02.914 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Membership.
+2021-05-18 10:52:02.974 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web) in 183.1189ms
+2021-05-18 10:52:02.975 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 189.5374ms 302 
+2021-05-18 10:52:02.986 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership  
+2021-05-18 10:52:02.988 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:52:02.988 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:52:02.988 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0998ms.
+2021-05-18 10:52:02.989 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:52:03.007 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 19.6756ms.
+2021-05-18 10:52:03.008 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 19.9739ms
+2021-05-18 10:52:03.008 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 21.3066ms 200 text/html; charset=utf-8
+2021-05-18 10:52:12.141 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/LogOut  
+2021-05-18 10:52:12.143 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "LogOutAsync", controller = "Membership"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogOutAsync() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:52:12.147 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization was successful.
+2021-05-18 10:52:12.147 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.LogOutAsync (NetCore.Web) - Validation state: Valid
+2021-05-18 10:52:12.148 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed out.
+2021-05-18 10:52:12.148 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.LogOutAsync (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 1.7595ms.
+2021-05-18 10:52:12.149 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Membership.
+2021-05-18 10:52:12.149 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.LogOutAsync (NetCore.Web) in 5.3963ms
+2021-05-18 10:52:12.149 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 7.9222ms 302 
+2021-05-18 10:52:12.152 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership  
+2021-05-18 10:52:12.153 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:52:12.153 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:52:12.153 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0077ms.
+2021-05-18 10:52:12.153 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:52:12.153 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.5051ms.
+2021-05-18 10:52:12.153 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.6623ms
+2021-05-18 10:52:12.153 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.9873ms 200 text/html; charset=utf-8
+2021-05-18 10:52:13.288 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Register  
+2021-05-18 10:52:13.289 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:52:13.289 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) - Validation state: Valid
+2021-05-18 10:52:13.290 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Register (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1967ms.
+2021-05-18 10:52:13.291 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Register.
+2021-05-18 10:52:13.304 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Register executed in 14.2741ms.
+2021-05-18 10:52:13.304 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 14.6687ms
+2021-05-18 10:52:13.304 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 15.9944ms 200 text/html; charset=utf-8
+2021-05-18 10:53:00.686 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Membership/Register application/x-www-form-urlencoded 322
+2021-05-18 10:53:00.690 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(NetCore.Data.ViewModels.RegisterInfoViewModel, System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:53:00.691 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) - Validation state: Valid
+2021-05-18 10:53:00.720 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:53:00.746 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = DateTime2), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [User] ([UserId], [AccessFailedCount], [GUIDSalt], [IsMembershipWithdrawn], [JoinUtcDate], [PasswordHash], [RNGSalt], [UserEmail], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2021-05-18 10:53:00.747 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@p9='?' (Size = 450), @p10='?' (Size = 450), @p11='?' (DbType = DateTime2)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserRolesByUser] ([UserId], [RoleId], [OwnedUtcDate])
+VALUES (@p9, @p10, @p11);
+2021-05-18 10:53:00.749 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Register (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 57.5535ms.
+2021-05-18 10:53:00.749 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Membership/Login.
+2021-05-18 10:53:00.749 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 58.8323ms
+2021-05-18 10:53:00.749 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 62.7045ms 302 
+2021-05-18 10:53:00.752 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login  
+2021-05-18 10:53:00.752 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:53:00.752 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) - Validation state: Valid
+2021-05-18 10:53:00.752 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0097ms.
+2021-05-18 10:53:00.752 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-05-18 10:53:00.754 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 1.2449ms.
+2021-05-18 10:53:00.754 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 1.4881ms
+2021-05-18 10:53:00.754 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.8159ms 200 text/html; charset=utf-8
+2021-05-18 10:53:05.357 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login  
+2021-05-18 10:53:05.357 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:53:05.357 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) - Validation state: Valid
+2021-05-18 10:53:05.357 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0081ms.
+2021-05-18 10:53:05.357 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-05-18 10:53:05.358 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.7088ms.
+2021-05-18 10:53:05.358 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 0.8839ms
+2021-05-18 10:53:05.358 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.1619ms 200 text/html; charset=utf-8
+2021-05-18 10:53:20.126 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Login application/x-www-form-urlencoded 275
+2021-05-18 10:53:20.126 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "LoginAsync", controller = "Membership"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(NetCore.Data.ViewModels.LoginInfoViewModel, System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:53:20.126 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web) - Validation state: Valid
+2021-05-18 10:53:20.127 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-05-18 10:53:20.127 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__login_UserId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__login_UserId_0
+2021-05-18 10:53:20.155 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2021-05-18 10:53:20.155 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uru].[UserId], [uru].[RoleId], [uru].[OwnedUtcDate]
+FROM [UserRolesByUser] AS [uru]
+WHERE [uru].[UserId] = @__userId_0
+2021-05-18 10:53:20.156 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ur].[RoleId], [ur].[ModifiedUtcData], [ur].[RoleName], [ur].[RolePriority]
+FROM [UserRole] AS [ur]
+WHERE [ur].[RoleId] = @__roleId_0
+2021-05-18 10:53:20.156 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed in.
+2021-05-18 10:53:20.156 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 29.5759ms.
+2021-05-18 10:53:20.156 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Membership.
+2021-05-18 10:53:20.156 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web) in 30.0132ms
+2021-05-18 10:53:20.156 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 30.3375ms 302 
+2021-05-18 10:53:20.159 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership  
+2021-05-18 10:53:20.159 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:53:20.159 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:53:20.159 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0046ms.
+2021-05-18 10:53:20.159 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:53:20.160 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.8013ms.
+2021-05-18 10:53:20.160 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.9578ms
+2021-05-18 10:53:20.160 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.2799ms 200 text/html; charset=utf-8
+2021-05-18 10:53:23.398 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/LogOut  
+2021-05-18 10:53:23.398 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "LogOutAsync", controller = "Membership"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LogOutAsync() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:53:23.398 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization was successful.
+2021-05-18 10:53:23.398 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.LogOutAsync (NetCore.Web) - Validation state: Valid
+2021-05-18 10:53:23.398 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed out.
+2021-05-18 10:53:23.399 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.LogOutAsync (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 0.1727ms.
+2021-05-18 10:53:23.399 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Membership.
+2021-05-18 10:53:23.399 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.LogOutAsync (NetCore.Web) in 0.6275ms
+2021-05-18 10:53:23.399 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.9961ms 302 
+2021-05-18 10:53:23.403 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership  
+2021-05-18 10:53:23.403 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-05-18 10:53:23.403 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) - Validation state: Valid
+2021-05-18 10:53:23.403 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0048ms.
+2021-05-18 10:53:23.403 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-05-18 10:53:23.404 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.3628ms.
+2021-05-18 10:53:23.404 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.5112ms
+2021-05-18 10:53:23.404 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 0.7753ms 200 text/html; charset=utf-8

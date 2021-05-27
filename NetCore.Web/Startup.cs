@@ -10,6 +10,7 @@ using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
 using NetCore.Services.Svcs;
 using NetCore.Utilities.Utils;
+using System;
 
 namespace NetCore.Web
 {
@@ -76,6 +77,15 @@ namespace NetCore.Web
             // 승인권한
             services.AddAuthorization();
 
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".NetCore.Session";
+                //세션 제한시간
+                options.IdleTimeout = TimeSpan.FromMinutes(30); //기본값은 20분
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -94,6 +104,9 @@ namespace NetCore.Web
 
             app.UseAuthentication();
             app.UseCookiePolicy();
+
+            // app.UseMvc() 위에 있어야함
+            app.UseSession();
 
             app.UseMvc(routes =>
             {
