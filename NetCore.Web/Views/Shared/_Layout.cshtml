@@ -36,7 +36,7 @@
                     @if (Context.User.Identity.IsAuthenticated)
                     {
                         <li><a asp-area="" asp-controller="Membership" asp-action="UpdateInfo">멤버십 사용자 정보수정</a></li>
-                        <li><a asp-area="" asp-controller="Membership" asp-action="LogOutAsync">멤버십 로그아웃</a></li>
+                        <li><a asp-area="" asp-controller="Membership" asp-action="LogOut">멤버십 로그아웃</a></li>
                     }
                     else
                     {

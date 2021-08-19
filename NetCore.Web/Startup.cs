@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using NetCore.Services.Data;
 using NetCore.Services.Interfaces;
@@ -64,7 +65,10 @@ namespace NetCore.Web
             });
 
             // MVC 패턴을 사용하기 위해서 서비스로 등록
-            services.AddMvc();
+            // Version 2.1
+            //services.AddMvc();
+            // Version 3.1
+            services.AddControllersWithViews();
 
             // 신원보증
             services.AddAuthentication(defaultScheme:CookieAuthenticationDefaults.AuthenticationScheme) 
@@ -89,7 +93,7 @@ namespace NetCore.Web
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, DBFirstDbInitializer seeder)
+        public void Configure(IApplicationBuilder app, /*IHostingEnvironment*/IWebHostEnvironment env, DBFirstDbInitializer seeder)
         {
             if (env.IsDevelopment())
             {
@@ -101,18 +105,36 @@ namespace NetCore.Web
             }
 
             app.UseStaticFiles();
-
-            app.UseAuthentication();
             app.UseCookiePolicy();
 
-            // app.UseMvc() 위에 있어야함
+            // Version 3.1에서 라우팅 지정 분리됨
+            app.UseRouting();
+
+            // 신원보증
+            app.UseAuthentication();
+
+            // 권한승인(Version 3.1)
+            app.UseAuthorization();
+
+            //app.UseMvc() 위에 있어야함
             app.UseSession();
 
-            app.UseMvc(routes =>
+            // Version 2.1
+            // MVC 라우팅 및 종착지 지정
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(
+            //        name: "default",
+            //        template: "{controller=Home}/{action=Index}/{id?}");
+            //});
+
+            // Version 3.1
+            // 종착지 지정
+            app.UseEndpoints(endpoints =>
             {
-                routes.MapRoute(
+                endpoints.MapControllerRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
             seeder.PlantSeedData();

@@ -15,10 +15,10 @@ D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\bin\Debug\netcoreapp2.1\NetCo
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\bin\Debug\netcoreapp2.1\NetCore.Services.pdb
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\bin\Debug\netcoreapp2.1\NetCore.Data.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\bin\Debug\netcoreapp2.1\NetCore.Data.pdb
-D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.csprojAssemblyReference.cache
-D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.csproj.CoreCompileInputs.cache
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.csproj.AssemblyReference.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.AssemblyInfoInputs.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.AssemblyInfo.cs
+D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.csproj.CoreCompileInputs.cache
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.csproj.CopyComplete
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.dll
 D:\GitHub\ASP.NET-Core-Membership\NetCore.Services\obj\Debug\netcoreapp2.1\NetCore.Services.pdb

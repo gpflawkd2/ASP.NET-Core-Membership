@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace NetCore.Web
@@ -11,8 +12,8 @@ namespace NetCore.Web
             CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
+        public static IHostBuilder CreateWebHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
                 .ConfigureLogging(builder => builder.AddFile(options =>
                 {
                     options.LogDirectory = "Logs";  //로그저장폴더
@@ -20,6 +21,9 @@ namespace NetCore.Web
                     options.FileSizeLimit = null;   //로그파일 사이즈 제한(기본: 10MB)
                     options.RetainedFileCountLimit = null;  //로그파일 보유겟수(기본: 2개)
                 }))
-                .UseStartup<Startup>();
+                .ConfigureWebHostDefaults(webBuider =>
+                {
+                    webBuider.UseStartup<Startup>();
+                });
     }
 }

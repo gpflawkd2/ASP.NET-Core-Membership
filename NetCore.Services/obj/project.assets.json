@@ -3561,6 +3561,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "projectReferences": {
             "D:\\GitHub\\ASP.NET-Core-Membership\\NetCore.Data\\NetCore.Data.csproj": {
               "projectPath": "D:\\GitHub\\ASP.NET-Core-Membership\\NetCore.Data\\NetCore.Data.csproj"
@@ -3576,6 +3577,7 @@
     },
     "frameworks": {
       "netcoreapp2.1": {
+        "targetAlias": "netcoreapp2.1",
         "dependencies": {
           "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
             "target": "Package",
@@ -3597,10 +3599,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }

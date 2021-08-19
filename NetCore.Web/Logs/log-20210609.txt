@@ -1,0 +1,202 @@
+2021-06-09 15:48:03.634 +09:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Creating key {9de232ee-5b37-41bf-9318-78ab868a7cba} with creation date 2021-06-09 06:48:03Z, activation date 2021-06-09 06:48:03Z, and expiration date 2021-06-16 06:48:03Z.
+2021-06-09 15:48:03.642 +09:00 [Warning] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {9de232ee-5b37-41bf-9318-78ab868a7cba} may be persisted to storage in unencrypted form.
+2021-06-09 15:48:03.644 +09:00 [Information] Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository: Writing data to file 'D:\GitHub\_DataProtector\key-9de232ee-5b37-41bf-9318-78ab868a7cba.xml'.
+2021-06-09 15:48:03.937 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-09 15:48:04.003 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-06-09 15:48:04.055 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-06-09 15:48:04.065 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-06-09 15:48:04.068 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-06-09 15:48:04.253 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-06-09 15:48:04.343 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-06-09 15:48:04.349 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web) - Validation state: Valid
+2021-06-09 15:48:04.350 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2609ms.
+2021-06-09 15:48:04.478 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-06-09 15:48:04.554 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 199.7368ms.
+2021-06-09 15:48:04.554 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 210.9269ms
+2021-06-09 15:48:04.559 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 307.1253ms 200 text/html; charset=utf-8
+2021-06-09 15:48:04.580 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/css/bootstrap.css  
+2021-06-09 15:48:04.581 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/css/site.css  
+2021-06-09 15:48:04.584 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/js/bootstrap.js  
+2021-06-09 15:48:04.584 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/jquery/dist/jquery.js  
+2021-06-09 15:48:04.585 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/images/banner1.svg  
+2021-06-09 15:48:04.585 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2021-06-09 15:48:04.591 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/js/site.js'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\js\site.js'
+2021-06-09 15:48:04.593 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 7.7382ms 200 application/javascript
+2021-06-09 15:48:04.593 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/images/banner2.svg  
+2021-06-09 15:48:04.605 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/images/banner1.svg'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\images\banner1.svg'
+2021-06-09 15:48:04.605 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 20.2328ms 200 image/svg+xml
+2021-06-09 15:48:04.609 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/images/banner3.svg  
+2021-06-09 15:48:04.610 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/css/site.css'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\css\site.css'
+2021-06-09 15:48:04.610 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 28.8285ms 200 text/css
+2021-06-09 15:48:04.612 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/images/banner2.svg'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\images\banner2.svg'
+2021-06-09 15:48:04.612 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 18.7783ms 200 image/svg+xml
+2021-06-09 15:48:04.626 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/images/banner3.svg'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\images\banner3.svg'
+2021-06-09 15:48:04.626 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 17.5451ms 200 image/svg+xml
+2021-06-09 15:48:04.650 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2021-06-09 15:48:04.650 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 70.1073ms 200 text/css
+2021-06-09 15:48:04.666 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+2021-06-09 15:48:04.666 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 81.7777ms 200 application/javascript
+2021-06-09 15:48:04.698 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+2021-06-09 15:48:04.707 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+2021-06-09 15:48:04.707 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 8.9023ms 200 font/woff2
+2021-06-09 15:48:04.746 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\jquery\dist\jquery.js'
+2021-06-09 15:48:04.746 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 161.7378ms 200 application/javascript
+2021-06-09 15:48:04.769 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/favicon.ico  
+2021-06-09 15:48:04.777 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/favicon.ico'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\favicon.ico'
+2021-06-09 15:48:04.777 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 7.9302ms 200 image/x-icon
+2021-06-09 15:48:12.560 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership  
+2021-06-09 15:48:12.562 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:48:12.564 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) - Validation state: Valid
+2021-06-09 15:48:12.564 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0846ms.
+2021-06-09 15:48:12.590 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-06-09 15:48:12.594 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 29.9773ms.
+2021-06-09 15:48:12.594 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 32.8875ms
+2021-06-09 15:48:12.595 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 34.884ms 200 text/html; charset=utf-8
+2021-06-09 15:48:13.712 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login  
+2021-06-09 15:48:13.722 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:48:13.727 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) - Validation state: Valid
+2021-06-09 15:48:13.727 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Login (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.2083ms.
+2021-06-09 15:48:13.740 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-06-09 15:48:13.769 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 42.125ms.
+2021-06-09 15:48:13.769 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 47.6667ms
+2021-06-09 15:48:13.769 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 57.1846ms 200 text/html; charset=utf-8
+2021-06-09 15:48:23.821 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Login application/x-www-form-urlencoded 275
+2021-06-09 15:48:23.827 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "LoginAsync", controller = "Membership"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(NetCore.Data.ViewModels.LoginInfoViewModel, System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:48:23.846 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web) - Validation state: Valid
+2021-06-09 15:48:23.849 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-09 15:48:23.866 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[@__login_UserId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__login_UserId_0
+2021-06-09 15:48:23.921 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2021-06-09 15:48:23.927 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT [uru].[UserId], [uru].[RoleId], [uru].[OwnedUtcDate]
+FROM [UserRolesByUser] AS [uru]
+WHERE [uru].[UserId] = @__userId_0
+2021-06-09 15:48:23.938 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ur].[RoleId], [ur].[ModifiedUtcData], [ur].[RoleName], [ur].[RolePriority]
+FROM [UserRole] AS [ur]
+WHERE [ur].[RoleId] = @__roleId_0
+2021-06-09 15:48:23.948 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ur].[RoleId], [ur].[ModifiedUtcData], [ur].[RoleName], [ur].[RolePriority]
+FROM [UserRole] AS [ur]
+WHERE [ur].[RoleId] = @__roleId_0
+2021-06-09 15:48:23.948 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__roleId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [ur].[RoleId], [ur].[ModifiedUtcData], [ur].[RoleName], [ur].[RolePriority]
+FROM [UserRole] AS [ur]
+WHERE [ur].[RoleId] = @__roleId_0
+2021-06-09 15:48:23.953 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies signed in.
+2021-06-09 15:48:23.953 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 107.3142ms.
+2021-06-09 15:48:23.954 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Membership.
+2021-06-09 15:48:24.016 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.LoginAsync (NetCore.Web) in 188.6153ms
+2021-06-09 15:48:24.016 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 195.0546ms 302 
+2021-06-09 15:48:24.020 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership  
+2021-06-09 15:48:24.021 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:48:24.021 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) - Validation state: Valid
+2021-06-09 15:48:24.021 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0065ms.
+2021-06-09 15:48:24.021 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-06-09 15:48:24.036 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 15.0417ms.
+2021-06-09 15:48:24.036 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 15.2213ms
+2021-06-09 15:48:24.036 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 15.925ms 200 text/html; charset=utf-8
+2021-06-09 15:50:00.922 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Data/AES  
+2021-06-09 15:50:00.923 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "AES", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AES() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-06-09 15:50:00.926 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization was successful.
+2021-06-09 15:50:00.927 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.DataController.AES (NetCore.Web) - Validation state: Valid
+2021-06-09 15:50:00.927 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.DataController.AES (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0708ms.
+2021-06-09 15:50:00.947 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view AES.
+2021-06-09 15:50:00.962 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view AES executed in 35.6248ms.
+2021-06-09 15:50:00.962 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AES (NetCore.Web) in 39.329ms
+2021-06-09 15:50:00.962 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 40.6382ms 200 text/html; charset=utf-8
+2021-06-09 15:50:04.508 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership  
+2021-06-09 15:50:04.509 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:50:04.509 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) - Validation state: Valid
+2021-06-09 15:50:04.509 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0135ms.
+2021-06-09 15:50:04.509 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-06-09 15:50:04.510 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.7955ms.
+2021-06-09 15:50:04.510 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 1.3195ms
+2021-06-09 15:50:04.510 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.7577ms 200 text/html; charset=utf-8
+2021-06-09 15:50:05.476 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-06-09 15:50:05.476 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-06-09 15:50:05.477 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web) - Validation state: Valid
+2021-06-09 15:50:05.477 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.HomeController.Index (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0122ms.
+2021-06-09 15:50:05.477 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-06-09 15:50:05.477 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.7152ms.
+2021-06-09 15:50:05.477 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.8933ms
+2021-06-09 15:50:05.477 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 1.2767ms 200 text/html; charset=utf-8
+2021-06-09 15:50:06.902 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership/UpdateInfo  
+2021-06-09 15:50:06.904 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "UpdateInfo", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateInfo() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:50:06.904 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization was successful.
+2021-06-09 15:50:06.904 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) - Validation state: Valid
+2021-06-09 15:50:06.905 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-09 15:50:06.905 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2021-06-09 15:50:06.906 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.6211ms.
+2021-06-09 15:50:06.927 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view UpdateInfo.
+2021-06-09 15:50:06.942 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view UpdateInfo executed in 36.1864ms.
+2021-06-09 15:50:06.942 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) in 38.1886ms
+2021-06-09 15:50:06.942 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 39.4473ms 200 text/html; charset=utf-8
+2021-06-09 15:50:51.140 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Membership/UpdateInfo application/x-www-form-urlencoded 452
+2021-06-09 15:50:51.143 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "UpdateInfo", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateInfo(NetCore.Data.ViewModels.UserInfoViewModel) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:50:51.143 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization was successful.
+2021-06-09 15:50:51.146 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) - Validation state: Invalid
+2021-06-09 15:50:51.147 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4942ms.
+2021-06-09 15:50:51.147 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view UpdateInfo.
+2021-06-09 15:50:51.149 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view UpdateInfo executed in 2.0982ms.
+2021-06-09 15:50:51.149 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) in 5.747ms
+2021-06-09 15:50:51.149 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 9.2844ms 200 text/html; charset=utf-8
+2021-06-09 15:50:58.337 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 POST http://localhost:52777/Membership/UpdateInfo application/x-www-form-urlencoded 467
+2021-06-09 15:50:58.337 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "UpdateInfo", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateInfo(NetCore.Data.ViewModels.UserInfoViewModel) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:50:58.337 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization was successful.
+2021-06-09 15:50:58.337 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) - Validation state: Valid
+2021-06-09 15:50:58.339 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-09 15:50:58.343 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[@__user_UserId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__user_UserId_0
+2021-06-09 15:50:58.394 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[@p8='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [User] SET [AccessFailedCount] = @p0, [GUIDSalt] = @p1, [IsMembershipWithdrawn] = @p2, [JoinUtcDate] = @p3, [PasswordHash] = @p4, [RNGSalt] = @p5, [UserEmail] = @p6, [UserName] = @p7
+WHERE [UserId] = @p8;
+SELECT @@ROWCOUNT;
+2021-06-09 15:50:58.396 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.RedirectToActionResult in 58.2571ms.
+2021-06-09 15:50:58.396 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Membership/UpdateInfo.
+2021-06-09 15:50:58.396 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) in 59.2993ms
+2021-06-09 15:50:58.396 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 59.7242ms 302 
+2021-06-09 15:50:58.399 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:52777/Membership/UpdateInfo  
+2021-06-09 15:50:58.399 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "UpdateInfo", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult UpdateInfo() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-06-09 15:50:58.399 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization was successful.
+2021-06-09 15:50:58.399 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) - Validation state: Valid
+2021-06-09 15:50:58.400 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-06-09 15:50:58.400 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[AccessFailedCount], [u].[GUIDSalt], [u].[IsMembershipWithdrawn], [u].[JoinUtcDate], [u].[PasswordHash], [u].[RNGSalt], [u].[UserEmail], [u].[UserName]
+FROM [User] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2021-06-09 15:50:58.400 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.7693ms.
+2021-06-09 15:50:58.400 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view UpdateInfo.
+2021-06-09 15:50:58.401 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view UpdateInfo executed in 1.3446ms.
+2021-06-09 15:50:58.402 +09:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.UpdateInfo (NetCore.Web) in 2.2837ms
+2021-06-09 15:50:58.402 +09:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 2.6288ms 200 text/html; charset=utf-8

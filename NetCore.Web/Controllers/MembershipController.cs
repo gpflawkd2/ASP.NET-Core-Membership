@@ -67,7 +67,7 @@ namespace NetCore.Web.Controllers
             return View(new LoginInfoViewModel());
         }
 
-        [HttpPost("/Login")]
+        [HttpPost("/{controller}/Login")]
         // 위조방지토큰을 통해 View로부터 받은 Post Data가 유효한지 검증
         [ValidateAntiForgeryToken]
         [AllowAnonymous]
@@ -224,7 +224,7 @@ namespace NetCore.Web.Controllers
         }
 
 
-        [HttpGet("/LogOut")]
+        [HttpGet("/{controller}/LogOut")]
         public async Task<IActionResult> LogOutAsync()
         {
             await _context.SignOutAsync(scheme: CookieAuthenticationDefaults.AuthenticationScheme);
@@ -233,7 +233,7 @@ namespace NetCore.Web.Controllers
             return RedirectToAction("Index", "Membership");
         }
 
-        [HttpPost("/Withdrawn")]
+        [HttpPost("/{controller}/Withdrawn")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> WithdrawnAsync(WithdrawnInfo withdrawn)
         {
