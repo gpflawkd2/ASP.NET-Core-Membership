@@ -2,5 +2,5 @@
 ASP.NET Core web page
 
 ## Prerequisites
-+ .NET Core 3.1 SDK
++ .NET Core 5.0 SDK
 + Visual Studio 2019
