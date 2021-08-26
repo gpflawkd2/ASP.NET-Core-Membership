@@ -1,0 +1,849 @@
+2021-08-26 11:26:25.145 +09:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: Creating key {a7036608-387c-4c1d-ae41-218814fc7e03} with creation date 2021-08-26 02:26:25Z, activation date 2021-08-26 08:20:56Z, and expiration date 2021-09-02 02:26:25Z.
+2021-08-26 11:26:25.158 +09:00 [Warning] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: No XML encryptor configured. Key {a7036608-387c-4c1d-ae41-218814fc7e03} may be persisted to storage in unencrypted form.
+2021-08-26 11:26:25.161 +09:00 [Information] Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository: Writing data to file 'D:\GitHub\_DataProtector\key-a7036608-387c-4c1d-ae41-218814fc7e03.xml'.
+2021-08-26 11:26:25.842 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-26 11:26:25.956 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-08-26 11:26:26.094 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 11:26:26.106 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 11:26:26.110 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 11:26:26.118 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2021-08-26 11:26:26.118 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2021-08-26 11:26:26.118 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\GitHub\ASP.NET-Core-Membership\NetCore.Web
+2021-08-26 11:26:26.130 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-08-26 11:26:26.154 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 11:26:26.162 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 11:26:26.170 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 11:26:26.237 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 67.9709ms.
+2021-08-26 11:26:26.237 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 75.4231ms
+2021-08-26 11:26:26.237 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 11:26:26.239 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 109.8985ms 200 text/html; charset=utf-8
+2021-08-26 11:26:26.248 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/css/bootstrap.css  
+2021-08-26 11:26:26.248 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/css/site.css  
+2021-08-26 11:26:26.251 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/lib/jquery/dist/jquery.js  
+2021-08-26 11:26:26.251 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/js/bootstrap.js  
+2021-08-26 11:26:26.251 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2021-08-26 11:26:26.251 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:26.252 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 1.0004ms 200 application/javascript; charset=utf-8
+2021-08-26 11:26:26.254 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/js/site.js'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\js\site.js'
+2021-08-26 11:26:26.255 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 3.4564ms 200 application/javascript
+2021-08-26 11:26:26.313 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/css/site.css'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\css\site.css'
+2021-08-26 11:26:26.313 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 65.1584ms 200 text/css
+2021-08-26 11:26:26.350 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+2021-08-26 11:26:26.350 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 102.736ms 200 text/css
+2021-08-26 11:26:26.377 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+2021-08-26 11:26:26.377 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 126.4365ms 200 application/javascript
+2021-08-26 11:26:26.394 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+2021-08-26 11:26:26.428 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+2021-08-26 11:26:26.428 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 34.0619ms 200 font/woff2
+2021-08-26 11:26:26.456 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\lib\jquery\dist\jquery.js'
+2021-08-26 11:26:26.456 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 205.5628ms 200 application/javascript
+2021-08-26 11:26:28.153 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:26:28.155 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:28.157 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:28.188 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:26:28.197 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 9.4393ms.
+2021-08-26 11:26:28.197 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 39.6389ms
+2021-08-26 11:26:28.197 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:28.197 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 43.9933ms 200 text/html; charset=utf-8
+2021-08-26 11:26:28.208 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:28.208 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1254ms 200 application/javascript; charset=utf-8
+2021-08-26 11:26:29.628 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:26:29.631 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:29.633 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:29.703 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:26:29.703 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 70.281ms
+2021-08-26 11:26:29.703 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:29.703 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Session started; Key:77d3b257-b491-e3dd-db72-20cc10a27793, Id:d507b781-5d3c-69b4-cd1b-89a14272b56f
+2021-08-26 11:26:29.704 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 76.8047ms 302 
+2021-08-26 11:26:29.707 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:26:29.708 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:29.708 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:29.731 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:26:29.733 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.6565ms.
+2021-08-26 11:26:29.733 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 24.7559ms
+2021-08-26 11:26:29.733 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:29.733 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 25.8325ms 200 text/html; charset=utf-8
+2021-08-26 11:26:29.748 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:29.748 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1248ms 200 application/javascript; charset=utf-8
+2021-08-26 11:26:30.591 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:26:30.593 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:30.593 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:30.595 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:26:30.595 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 2.0746ms
+2021-08-26 11:26:30.595 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:30.596 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 4.4145ms 302 
+2021-08-26 11:26:30.597 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:26:30.598 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:30.598 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:30.598 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:26:30.600 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.8184ms.
+2021-08-26 11:26:30.600 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 2.2023ms
+2021-08-26 11:26:30.600 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:30.600 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 3.0536ms 200 text/html; charset=utf-8
+2021-08-26 11:26:30.614 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:30.614 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1078ms 200 application/javascript; charset=utf-8
+2021-08-26 11:26:31.570 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:26:31.571 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:31.571 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:31.573 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:26:31.573 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.8164ms
+2021-08-26 11:26:31.573 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:31.574 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 3.7416ms 302 
+2021-08-26 11:26:31.575 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:26:31.576 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:31.576 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:31.577 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:26:31.581 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 4.3186ms.
+2021-08-26 11:26:31.581 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 5.0836ms
+2021-08-26 11:26:31.581 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:31.582 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 6.1844ms 200 text/html; charset=utf-8
+2021-08-26 11:26:31.594 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:31.594 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.2629ms 200 application/javascript; charset=utf-8
+2021-08-26 11:26:32.569 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:26:32.570 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:32.570 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:32.571 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:26:32.572 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.2553ms
+2021-08-26 11:26:32.572 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:32.572 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.8454ms 302 
+2021-08-26 11:26:32.574 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:26:32.574 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:32.574 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:32.574 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:26:32.576 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.5215ms.
+2021-08-26 11:26:32.576 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.721ms
+2021-08-26 11:26:32.576 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:32.576 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.3193ms 200 text/html; charset=utf-8
+2021-08-26 11:26:32.588 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:32.588 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1074ms 200 application/javascript; charset=utf-8
+2021-08-26 11:26:34.241 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:26:34.242 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:34.242 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:34.244 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:26:34.244 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 2.0784ms
+2021-08-26 11:26:34.244 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:26:34.245 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 3.9533ms 302 
+2021-08-26 11:26:34.248 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:26:34.248 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:34.248 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:34.249 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:26:34.252 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 2.691ms.
+2021-08-26 11:26:34.252 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 3.4217ms
+2021-08-26 11:26:34.252 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:34.252 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 4.3678ms 200 text/html; charset=utf-8
+2021-08-26 11:26:34.263 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:34.263 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1841ms 200 application/javascript; charset=utf-8
+2021-08-26 11:26:35.313 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/RemoveCart application/x-www-form-urlencoded 225
+2021-08-26 11:26:35.314 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web)'
+2021-08-26 11:26:35.317 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "RemoveCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:35.318 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:26:35.318 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web) in 1.3937ms
+2021-08-26 11:26:35.318 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web)'
+2021-08-26 11:26:35.318 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 5.1042ms 302 
+2021-08-26 11:26:35.320 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:26:35.321 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:35.321 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:26:35.321 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:26:35.322 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.5224ms.
+2021-08-26 11:26:35.322 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.8062ms
+2021-08-26 11:26:35.323 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:26:35.323 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.6795ms 200 text/html; charset=utf-8
+2021-08-26 11:26:35.337 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:26:35.337 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1082ms 200 application/javascript; charset=utf-8
+2021-08-26 11:35:21.553 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:35:21.553 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:21.554 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:21.556 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:35:21.556 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.4878ms
+2021-08-26 11:35:21.556 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:21.556 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 3.7425ms 302 
+2021-08-26 11:35:21.560 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:35:21.561 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:21.561 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:21.561 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:35:21.563 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.5135ms.
+2021-08-26 11:35:21.563 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.8428ms
+2021-08-26 11:35:21.563 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:21.563 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.5886ms 200 text/html; charset=utf-8
+2021-08-26 11:35:21.577 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:35:21.577 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.098ms 200 application/javascript; charset=utf-8
+2021-08-26 11:35:21.980 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:35:21.980 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:21.980 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:21.982 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:35:21.982 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.3195ms
+2021-08-26 11:35:21.982 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:21.982 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.3861ms 302 
+2021-08-26 11:35:21.984 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:35:21.984 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:21.985 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:21.985 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:35:21.987 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 2.4146ms.
+2021-08-26 11:35:21.987 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 2.7544ms
+2021-08-26 11:35:21.987 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:21.988 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 3.3862ms 200 text/html; charset=utf-8
+2021-08-26 11:35:22.001 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:35:22.001 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1668ms 200 application/javascript; charset=utf-8
+2021-08-26 11:35:23.543 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:35:23.544 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:23.544 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:23.545 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:35:23.545 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.3102ms
+2021-08-26 11:35:23.545 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:23.546 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.6058ms 302 
+2021-08-26 11:35:23.548 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:35:23.548 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:23.548 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:23.549 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:35:23.550 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.5804ms.
+2021-08-26 11:35:23.550 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.972ms
+2021-08-26 11:35:23.550 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:23.551 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.7758ms 200 text/html; charset=utf-8
+2021-08-26 11:35:23.564 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:35:23.564 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.0955ms 200 application/javascript; charset=utf-8
+2021-08-26 11:35:24.320 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:35:24.321 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:24.321 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:24.322 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:35:24.322 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 1.4155ms
+2021-08-26 11:35:24.322 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:24.323 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.3685ms 302 
+2021-08-26 11:35:24.325 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:35:24.325 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:24.325 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:24.325 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:35:24.327 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.3451ms.
+2021-08-26 11:35:24.327 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.5719ms
+2021-08-26 11:35:24.327 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:24.327 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.2099ms 200 text/html; charset=utf-8
+2021-08-26 11:35:24.340 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:35:24.341 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.0926ms 200 application/javascript; charset=utf-8
+2021-08-26 11:35:24.991 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/AddCart application/x-www-form-urlencoded 225
+2021-08-26 11:35:24.991 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:24.991 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "AddCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:24.992 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:35:24.992 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.AddCart (NetCore.Web) in 0.9872ms
+2021-08-26 11:35:24.992 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.AddCart (NetCore.Web)'
+2021-08-26 11:35:24.993 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 1.9276ms 302 
+2021-08-26 11:35:24.994 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:35:24.995 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:24.995 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:24.995 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:35:24.996 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.2417ms.
+2021-08-26 11:35:24.996 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.4036ms
+2021-08-26 11:35:24.996 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:24.996 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 1.9557ms 200 text/html; charset=utf-8
+2021-08-26 11:35:25.007 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:35:25.008 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.0927ms 200 application/javascript; charset=utf-8
+2021-08-26 11:35:25.577 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 POST http://localhost:52777/Data/RemoveCart application/x-www-form-urlencoded 225
+2021-08-26 11:35:25.577 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web)'
+2021-08-26 11:35:25.577 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "RemoveCart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RemoveCart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:25.578 +09:00 [Information] Microsoft.AspNetCore.Mvc.RedirectToActionResult: Executing RedirectResult, redirecting to /Data/Cart.
+2021-08-26 11:35:25.578 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web) in 0.8941ms
+2021-08-26 11:35:25.578 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.RemoveCart (NetCore.Web)'
+2021-08-26 11:35:25.579 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 1.6308ms 302 
+2021-08-26 11:35:25.580 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart  
+2021-08-26 11:35:25.581 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:25.581 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 11:35:25.581 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 11:35:25.582 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 1.3249ms.
+2021-08-26 11:35:25.582 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.5582ms
+2021-08-26 11:35:25.582 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 11:35:25.583 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.2512ms 200 text/html; charset=utf-8
+2021-08-26 11:35:25.594 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:35:25.595 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.1389ms 200 application/javascript; charset=utf-8
+2021-08-26 11:35:30.528 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/  
+2021-08-26 11:35:30.529 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 11:35:30.529 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 11:35:30.529 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 11:35:30.531 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 2.0179ms.
+2021-08-26 11:35:30.531 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 2.2608ms
+2021-08-26 11:35:30.531 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 11:35:30.531 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 2.8943ms 200 text/html; charset=utf-8
+2021-08-26 11:35:30.562 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js  
+2021-08-26 11:35:30.562 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished in 0.207ms 200 application/javascript; charset=utf-8
+2021-08-26 15:37:46.477 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-26 15:37:46.630 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-08-26 15:37:46.733 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:37:46.745 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:37:46.748 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:37:46.756 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2021-08-26 15:37:46.756 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2021-08-26 15:37:46.756 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\GitHub\ASP.NET-Core-Membership\NetCore.Web
+2021-08-26 15:37:46.794 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:37:46.838 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:37:46.846 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:37:46.856 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:37:46.954 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 97.6995ms.
+2021-08-26 15:37:46.954 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 107.9092ms
+2021-08-26 15:37:46.954 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:37:46.957 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 163.8378ms
+2021-08-26 15:37:46.980 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:37:46.983 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 3.0265ms
+2021-08-26 15:37:50.178 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:37:50.179 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:37:50.179 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:37:50.179 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:37:50.182 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 2.9086ms.
+2021-08-26 15:37:50.182 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 3.1508ms
+2021-08-26 15:37:50.182 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:37:50.182 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 4.2735ms
+2021-08-26 15:37:50.192 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:37:50.193 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2559ms
+2021-08-26 15:37:51.426 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:37:51.428 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:37:51.429 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:37:51.432 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:37:51.433 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:37:51.440 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 7.8062ms.
+2021-08-26 15:37:51.440 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 11.0916ms
+2021-08-26 15:37:51.440 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:37:51.440 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 14.1578ms
+2021-08-26 15:37:51.461 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:37:51.462 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2789ms
+2021-08-26 15:43:37.820 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-26 15:43:37.932 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (21ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-08-26 15:43:38.030 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:43:38.042 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:43:38.044 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:43:38.054 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2021-08-26 15:43:38.055 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2021-08-26 15:43:38.055 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\GitHub\ASP.NET-Core-Membership\NetCore.Web
+2021-08-26 15:43:38.066 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:43:38.099 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:43:38.108 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:43:38.110 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:43:38.129 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:43:38.212 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 95.2306ms.
+2021-08-26 15:43:38.213 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 104.8459ms
+2021-08-26 15:43:38.213 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:43:38.216 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 150.9994ms
+2021-08-26 15:43:38.220 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:43:38.222 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 1.3858ms
+2021-08-26 15:43:38.241 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/favicon.ico - -
+2021-08-26 15:43:38.264 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/favicon.ico'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\favicon.ico'
+2021-08-26 15:43:38.265 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/favicon.ico - - - 200 32038 image/x-icon 24.2646ms
+2021-08-26 15:45:04.814 +09:00 [Information] Microsoft.EntityFrameworkCore.Infrastructure: Entity Framework Core 2.1.14-servicing-32113 initialized 'DBFirstDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2021-08-26 15:45:04.926 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (20ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE') SELECT 1 ELSE SELECT 0
+2021-08-26 15:45:05.026 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [User] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:45:05.038 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRole] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:45:05.041 +09:00 [Information] Microsoft.EntityFrameworkCore.Database.Command: Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserRolesByUser] AS [u])
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END
+2021-08-26 15:45:05.050 +09:00 [Information] Microsoft.Hosting.Lifetime: Application started. Press Ctrl+C to shut down.
+2021-08-26 15:45:05.050 +09:00 [Information] Microsoft.Hosting.Lifetime: Hosting environment: Development
+2021-08-26 15:45:05.050 +09:00 [Information] Microsoft.Hosting.Lifetime: Content root path: D:\GitHub\ASP.NET-Core-Membership\NetCore.Web
+2021-08-26 15:45:05.062 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:45:05.097 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:45:05.107 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:45:05.109 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:45:05.129 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:45:05.214 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 98.0369ms.
+2021-08-26 15:45:05.215 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 108.0296ms
+2021-08-26 15:45:05.215 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:45:05.218 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 156.6428ms
+2021-08-26 15:45:05.223 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:45:05.225 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 1.2899ms
+2021-08-26 15:45:05.241 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/favicon.ico - -
+2021-08-26 15:45:05.248 +09:00 [Information] Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware: Sending file. Request path: '/favicon.ico'. Physical path: 'D:\GitHub\ASP.NET-Core-Membership\NetCore.Web\wwwroot\favicon.ico'
+2021-08-26 15:45:05.248 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/favicon.ico - - - 200 32038 image/x-icon 7.5067ms
+2021-08-26 15:49:47.661 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:49:47.662 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:49:47.663 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:49:47.666 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:49:47.674 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 10.3247ms.
+2021-08-26 15:49:47.674 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 10.8544ms
+2021-08-26 15:49:47.674 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:49:47.674 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 13.4291ms
+2021-08-26 15:49:47.692 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:49:47.692 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2681ms
+2021-08-26 15:50:01.201 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:50:01.203 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:01.203 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:50:01.203 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:50:01.203 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:50:01.204 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 0.9698ms.
+2021-08-26 15:50:01.204 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 1.1413ms
+2021-08-26 15:50:01.204 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:01.204 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 3.5999ms
+2021-08-26 15:50:01.218 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:01.218 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2629ms
+2021-08-26 15:50:02.209 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/AES - -
+2021-08-26 15:50:02.212 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperUser|SystemUser)
+2021-08-26 15:50:02.214 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was challenged.
+2021-08-26 15:50:02.214 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/AES - - - 302 - - 5.1814ms
+2021-08-26 15:50:02.216 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - -
+2021-08-26 15:50:02.216 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:02.223 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:02.230 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:02.253 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 24.2169ms.
+2021-08-26 15:50:02.253 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 30.0767ms
+2021-08-26 15:50:02.253 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:02.253 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 37.3664ms
+2021-08-26 15:50:02.269 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:02.270 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2220ms
+2021-08-26 15:50:03.359 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Register - -
+2021-08-26 15:50:03.360 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:03.361 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:03.363 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Register.
+2021-08-26 15:50:03.373 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Register executed in 11.7044ms.
+2021-08-26 15:50:03.373 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 12.2463ms
+2021-08-26 15:50:03.374 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:03.374 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Register - - - 200 - text/html;+charset=utf-8 14.7742ms
+2021-08-26 15:50:03.385 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:03.385 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2281ms
+2021-08-26 15:50:04.103 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login - -
+2021-08-26 15:50:04.103 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:04.103 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:04.105 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:04.107 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 1.2019ms.
+2021-08-26 15:50:04.107 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 3.6029ms
+2021-08-26 15:50:04.107 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:04.107 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login - - - 200 - text/html;+charset=utf-8 4.1444ms
+2021-08-26 15:50:04.125 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:04.125 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2122ms
+2021-08-26 15:50:04.646 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership - -
+2021-08-26 15:50:04.647 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:04.647 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:04.649 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:04.651 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 4.031ms.
+2021-08-26 15:50:04.651 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 4.2148ms
+2021-08-26 15:50:04.651 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:04.652 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership - - - 200 - text/html;+charset=utf-8 5.2507ms
+2021-08-26 15:50:04.661 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:04.661 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2153ms
+2021-08-26 15:50:05.185 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:05.186 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:05.186 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:05.186 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:05.187 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.9663ms.
+2021-08-26 15:50:05.187 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 1.1427ms
+2021-08-26 15:50:05.187 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:05.187 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 1.6890ms
+2021-08-26 15:50:05.208 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:05.208 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2287ms
+2021-08-26 15:50:06.392 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership - -
+2021-08-26 15:50:06.392 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:06.392 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:06.392 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:06.393 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.5751ms.
+2021-08-26 15:50:06.393 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.7149ms
+2021-08-26 15:50:06.393 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:06.393 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership - - - 200 - text/html;+charset=utf-8 1.2046ms
+2021-08-26 15:50:06.405 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:06.405 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1973ms
+2021-08-26 15:50:06.871 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login - -
+2021-08-26 15:50:06.871 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:06.871 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:06.871 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:06.873 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 1.7375ms.
+2021-08-26 15:50:06.873 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 2.0306ms
+2021-08-26 15:50:06.873 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:06.873 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login - - - 200 - text/html;+charset=utf-8 2.6640ms
+2021-08-26 15:50:06.890 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:06.890 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2667ms
+2021-08-26 15:50:07.246 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Register - -
+2021-08-26 15:50:07.246 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:07.246 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:07.246 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Register.
+2021-08-26 15:50:07.247 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Register executed in 0.8956ms.
+2021-08-26 15:50:07.247 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 1.0504ms
+2021-08-26 15:50:07.247 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:07.248 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Register - - - 200 - text/html;+charset=utf-8 1.6072ms
+2021-08-26 15:50:07.259 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:07.259 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.3906ms
+2021-08-26 15:50:07.710 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/AES - -
+2021-08-26 15:50:07.710 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperUser|SystemUser)
+2021-08-26 15:50:07.710 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was challenged.
+2021-08-26 15:50:07.710 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/AES - - - 302 - - 0.5840ms
+2021-08-26 15:50:07.712 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - -
+2021-08-26 15:50:07.712 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:07.712 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:07.713 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:07.714 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.7981ms.
+2021-08-26 15:50:07.714 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 1.3595ms
+2021-08-26 15:50:07.714 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:07.714 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 2.0107ms
+2021-08-26 15:50:07.725 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:07.725 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2005ms
+2021-08-26 15:50:08.085 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:50:08.085 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:08.085 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:50:08.086 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:50:08.086 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:50:08.086 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 0.7566ms.
+2021-08-26 15:50:08.086 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 0.8321ms
+2021-08-26 15:50:08.086 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:08.086 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 1.2642ms
+2021-08-26 15:50:08.099 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:08.099 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2201ms
+2021-08-26 15:50:17.070 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:50:17.070 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:17.070 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:50:17.070 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:50:17.070 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:50:17.071 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 0.4988ms.
+2021-08-26 15:50:17.071 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 0.6011ms
+2021-08-26 15:50:17.071 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:17.071 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 1.3058ms
+2021-08-26 15:50:17.084 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:17.084 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2039ms
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.398ms.
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.4631ms
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:24.076 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 0.9891ms
+2021-08-26 15:50:24.098 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:24.098 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.3164ms
+2021-08-26 15:50:31.602 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:50:31.602 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:31.602 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:50:31.602 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:50:31.602 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:50:31.603 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 0.5606ms.
+2021-08-26 15:50:31.603 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 0.6779ms
+2021-08-26 15:50:31.603 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:31.603 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 1.1417ms
+2021-08-26 15:50:31.616 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:31.617 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2167ms
+2021-08-26 15:50:32.240 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/AES - -
+2021-08-26 15:50:32.240 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperUser|SystemUser)
+2021-08-26 15:50:32.240 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was challenged.
+2021-08-26 15:50:32.240 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/AES - - - 302 - - 0.6204ms
+2021-08-26 15:50:32.242 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - -
+2021-08-26 15:50:32.242 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:32.242 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:32.242 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:32.243 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.7128ms.
+2021-08-26 15:50:32.243 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 0.9178ms
+2021-08-26 15:50:32.243 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:32.243 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 1.4289ms
+2021-08-26 15:50:32.261 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:32.262 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.3652ms
+2021-08-26 15:50:32.710 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Register - -
+2021-08-26 15:50:32.710 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:32.710 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:32.710 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Register.
+2021-08-26 15:50:32.711 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Register executed in 0.8779ms.
+2021-08-26 15:50:32.711 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 1.0946ms
+2021-08-26 15:50:32.711 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:32.711 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Register - - - 200 - text/html;+charset=utf-8 1.6342ms
+2021-08-26 15:50:32.724 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:32.724 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1756ms
+2021-08-26 15:50:33.249 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login - -
+2021-08-26 15:50:33.249 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:33.249 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:33.249 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:33.250 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 1.1124ms.
+2021-08-26 15:50:33.250 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 1.341ms
+2021-08-26 15:50:33.250 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:33.251 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login - - - 200 - text/html;+charset=utf-8 1.8326ms
+2021-08-26 15:50:33.265 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:33.265 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1796ms
+2021-08-26 15:50:33.778 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership - -
+2021-08-26 15:50:33.778 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:33.778 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:33.779 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:33.779 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.373ms.
+2021-08-26 15:50:33.779 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.4851ms
+2021-08-26 15:50:33.779 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:33.779 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership - - - 200 - text/html;+charset=utf-8 1.4675ms
+2021-08-26 15:50:33.800 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:33.800 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2276ms
+2021-08-26 15:50:34.263 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:34.263 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:34.263 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:34.264 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:34.264 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.3834ms.
+2021-08-26 15:50:34.264 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.4507ms
+2021-08-26 15:50:34.264 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:34.264 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 0.9404ms
+2021-08-26 15:50:34.276 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:34.276 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1772ms
+2021-08-26 15:50:34.665 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:34.665 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:34.665 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:34.665 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:34.666 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.5388ms.
+2021-08-26 15:50:34.666 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.6731ms
+2021-08-26 15:50:34.666 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:34.666 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 1.1892ms
+2021-08-26 15:50:34.676 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:34.677 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1669ms
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership - -
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.3236ms.
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.4088ms
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:35.126 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership - - - 200 - text/html;+charset=utf-8 0.7871ms
+2021-08-26 15:50:35.137 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:35.137 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1783ms
+2021-08-26 15:50:35.621 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login - -
+2021-08-26 15:50:35.621 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:35.622 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:35.622 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:35.623 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 1.2808ms.
+2021-08-26 15:50:35.623 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 1.4458ms
+2021-08-26 15:50:35.623 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:35.623 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login - - - 200 - text/html;+charset=utf-8 1.8861ms
+2021-08-26 15:50:35.633 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:35.634 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2048ms
+2021-08-26 15:50:36.016 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Register - -
+2021-08-26 15:50:36.016 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:36.016 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:36.016 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Register.
+2021-08-26 15:50:36.017 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Register executed in 0.7019ms.
+2021-08-26 15:50:36.017 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 0.8701ms
+2021-08-26 15:50:36.017 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:36.017 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Register - - - 200 - text/html;+charset=utf-8 1.3902ms
+2021-08-26 15:50:36.031 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:36.031 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1739ms
+2021-08-26 15:50:36.447 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/AES - -
+2021-08-26 15:50:36.447 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperUser|SystemUser)
+2021-08-26 15:50:36.447 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was challenged.
+2021-08-26 15:50:36.447 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/AES - - - 302 - - 0.4170ms
+2021-08-26 15:50:36.451 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - -
+2021-08-26 15:50:36.451 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:36.451 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:36.451 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:36.452 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.6345ms.
+2021-08-26 15:50:36.452 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 0.8152ms
+2021-08-26 15:50:36.452 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:36.452 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 1.2212ms
+2021-08-26 15:50:36.467 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:36.467 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1888ms
+2021-08-26 15:50:36.813 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:50:36.814 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:36.814 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:50:36.814 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:50:36.814 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:50:36.814 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 0.5511ms.
+2021-08-26 15:50:36.815 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 0.6703ms
+2021-08-26 15:50:36.815 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:36.815 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 1.4458ms
+2021-08-26 15:50:36.827 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:36.827 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2587ms
+2021-08-26 15:50:39.230 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Register - -
+2021-08-26 15:50:39.230 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:39.231 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:39.231 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Register.
+2021-08-26 15:50:39.231 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Register executed in 0.6628ms.
+2021-08-26 15:50:39.231 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 0.8175ms
+2021-08-26 15:50:39.231 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:39.232 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Register - - - 200 - text/html;+charset=utf-8 1.2770ms
+2021-08-26 15:50:39.241 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:39.241 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1853ms
+2021-08-26 15:50:39.735 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login - -
+2021-08-26 15:50:39.735 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:39.735 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:39.736 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:39.737 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.9431ms.
+2021-08-26 15:50:39.737 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 1.3328ms
+2021-08-26 15:50:39.737 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:39.737 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login - - - 200 - text/html;+charset=utf-8 1.8745ms
+2021-08-26 15:50:39.759 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:39.759 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1758ms
+2021-08-26 15:50:40.177 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership - -
+2021-08-26 15:50:40.177 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:40.177 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:40.177 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:40.178 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.6444ms.
+2021-08-26 15:50:40.178 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.7731ms
+2021-08-26 15:50:40.178 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:40.178 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership - - - 200 - text/html;+charset=utf-8 1.2706ms
+2021-08-26 15:50:40.191 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:40.191 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1663ms
+2021-08-26 15:50:40.632 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:40.632 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:40.632 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:40.633 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:40.633 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.4036ms.
+2021-08-26 15:50:40.633 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.489ms
+2021-08-26 15:50:40.633 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:40.633 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 0.9215ms
+2021-08-26 15:50:40.647 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:40.647 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2480ms
+2021-08-26 15:50:40.982 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:40.982 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:40.982 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:40.982 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:40.982 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.2807ms.
+2021-08-26 15:50:40.982 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.3534ms
+2021-08-26 15:50:40.982 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:40.983 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 0.7776ms
+2021-08-26 15:50:40.993 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:40.993 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1757ms
+2021-08-26 15:50:41.471 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/AES - -
+2021-08-26 15:50:41.471 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperUser|SystemUser)
+2021-08-26 15:50:41.471 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was challenged.
+2021-08-26 15:50:41.471 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/AES - - - 302 - - 0.2791ms
+2021-08-26 15:50:41.473 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - -
+2021-08-26 15:50:41.473 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:41.473 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:41.473 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:41.473 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.6115ms.
+2021-08-26 15:50:41.473 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 0.7673ms
+2021-08-26 15:50:41.473 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:41.474 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 1.0755ms
+2021-08-26 15:50:41.485 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:41.485 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1876ms
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/Cart - -
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Cart", controller = "Data"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Cart() on controller NetCore.Web.Controllers.DataController (NetCore.Web).
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Session.DistributedSession: Accessing expired session, Key:77d3b257-b491-e3dd-db72-20cc10a27793
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Cart.
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Cart executed in 0.3488ms.
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.DataController.Cart (NetCore.Web) in 0.4049ms
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.DataController.Cart (NetCore.Web)'
+2021-08-26 15:50:41.857 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/Cart - - - 200 - text/html;+charset=utf-8 0.7638ms
+2021-08-26 15:50:41.867 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:41.867 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2093ms
+2021-08-26 15:50:44.773 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Data/AES - -
+2021-08-26 15:50:44.773 +09:00 [Information] Microsoft.AspNetCore.Authorization.DefaultAuthorizationService: Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperUser|SystemUser)
+2021-08-26 15:50:44.773 +09:00 [Information] Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler: AuthenticationScheme: Cookies was challenged.
+2021-08-26 15:50:44.774 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Data/AES - - - 302 - - 0.2981ms
+2021-08-26 15:50:44.775 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - -
+2021-08-26 15:50:44.775 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:44.775 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:44.776 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:44.776 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.6491ms.
+2021-08-26 15:50:44.776 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 0.8321ms
+2021-08-26 15:50:44.776 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:44.776 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login?ReturnUrl=%2FData%2FAES - - - 200 - text/html;+charset=utf-8 1.2832ms
+2021-08-26 15:50:44.790 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:44.790 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1651ms
+2021-08-26 15:50:45.298 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Register - -
+2021-08-26 15:50:45.298 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:45.298 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Register", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:45.298 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Register.
+2021-08-26 15:50:45.300 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Register executed in 1.2114ms.
+2021-08-26 15:50:45.300 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Register (NetCore.Web) in 1.3815ms
+2021-08-26 15:50:45.300 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Register (NetCore.Web)'
+2021-08-26 15:50:45.300 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Register - - - 200 - text/html;+charset=utf-8 1.8799ms
+2021-08-26 15:50:45.316 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:45.316 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1742ms
+2021-08-26 15:50:45.741 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership/Login - -
+2021-08-26 15:50:45.741 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:45.741 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Login", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(System.String) on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:45.741 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Login.
+2021-08-26 15:50:45.742 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Login executed in 0.5339ms.
+2021-08-26 15:50:45.742 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Login (NetCore.Web) in 0.6747ms
+2021-08-26 15:50:45.742 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Login (NetCore.Web)'
+2021-08-26 15:50:45.742 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership/Login - - - 200 - text/html;+charset=utf-8 1.0550ms
+2021-08-26 15:50:45.752 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:45.753 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.2465ms
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/Membership - -
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Membership"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.MembershipController (NetCore.Web).
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.3762ms.
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.MembershipController.Index (NetCore.Web) in 0.4603ms
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.MembershipController.Index (NetCore.Web)'
+2021-08-26 15:50:46.310 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/Membership - - - 200 - text/html;+charset=utf-8 0.8464ms
+2021-08-26 15:50:46.326 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:46.326 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1597ms
+2021-08-26 15:50:46.717 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:46.717 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:46.717 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:46.717 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:46.717 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.2646ms.
+2021-08-26 15:50:46.717 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.3014ms
+2021-08-26 15:50:46.717 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:46.718 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 0.7093ms
+2021-08-26 15:50:46.738 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:46.739 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1920ms
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/ - -
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executing endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller NetCore.Web.Controllers.HomeController (NetCore.Web).
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executing ViewResult, running view Index.
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor: Executed ViewResult - view Index executed in 0.2496ms.
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker: Executed action NetCore.Web.Controllers.HomeController.Index (NetCore.Web) in 0.2795ms
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Routing.EndpointMiddleware: Executed endpoint 'NetCore.Web.Controllers.HomeController.Index (NetCore.Web)'
+2021-08-26 15:50:47.750 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/ - - - 200 - text/html;+charset=utf-8 0.5736ms
+2021-08-26 15:50:47.761 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request starting HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - -
+2021-08-26 15:50:47.761 +09:00 [Information] Microsoft.AspNetCore.Hosting.Diagnostics: Request finished HTTP/1.1 GET http://localhost:52777/_framework/aspnetcore-browser-refresh.js - - - 200 3086 application/javascript;+charset=utf-8 0.1753ms
